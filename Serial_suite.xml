@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Series_Suite">
+	<listeners>
+		<listener class-name="com.orangehrm.utils.ExtentReport_OrangeHRM"/>
+	</listeners>
+
+  <test thread-count="5" name="Test">
+  
+    <classes>
+      <class name="com.orangehrm.tests.TC001_ValidLogin"/>
+      <class name="com.orangehrm.tests.TC002_InvalidUsername"/>
+      <class name="com.orangehrm.tests.TC003_InvalidPassword"/>
+      <class name="com.orangehrm.tests.TC004_BlankUsername"/>
+      <class name="com.orangehrm.tests.TC005_BlankPassword"/>
+      <class name="com.orangehrm.tests.TC006_BothFieldsBlank"/>
+      <class name="com.orangehrm.tests.TC010_LogoutFunctionality"/>
+      <class name="com.orangehrm.tests.TC011_DashboardLoad"/>
+      <class name="com.orangehrm.tests.TC015_ProfileDropdownCheck"/>
+      <class name="com.orangehrm.tests.TC016_NavigatetoUsers"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Series_Suite -->
