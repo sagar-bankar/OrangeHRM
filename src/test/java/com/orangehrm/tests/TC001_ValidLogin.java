@@ -21,6 +21,7 @@ public class TC001_ValidLogin extends BaseClass {
 		waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 
+		logger.info("Log in successfully done...");
 		DashBoardPage dashboardpage = new DashBoardPage(driver);
 		waitForElementTobeVisible(dashboardpage.return_Dashboardelement());
 		Assert.assertTrue(dashboardpage.isDisplayed_Dashboardelement());

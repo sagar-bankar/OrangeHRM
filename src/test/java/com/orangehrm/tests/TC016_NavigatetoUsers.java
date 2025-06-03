@@ -10,7 +10,7 @@ import com.orangehrm.pages.LoginPage;
 public class TC016_NavigatetoUsers extends BaseClass {
 
 	@Test
-	public void TC016_NavigatetoUsers() {
+	public void NavigatetoUsers() {
 
 		LoginPage loginpage = new LoginPage(driver);
 		waitForElementTobeVisible(loginpage.return_username());

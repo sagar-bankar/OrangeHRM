@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,16 @@
                       <a href="#" panel-name="suite-Series_Suite" class="show-methods failed suite-Series_Suite"> (show)</a> <!-- show-methods failed suite-Series_Suite -->
                     </span>
                     <div class="method-list-content failed suite-Series_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC010_LogoutFunctionality" class="method navigator-link" hash-for-method="LogoutFunctionality">LogoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC011_DashboardLoad" class="method navigator-link" hash-for-method="TC011_DashboardLoad">TC011_DashboardLoad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC016_NavigatetoUsers" class="method navigator-link" hash-for-method="TC016_NavigatetoUsers">TC016_NavigatetoUsers</a> <!-- method navigator-link -->
@@ -142,16 +152,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC010_LogoutFunctionality" class="method navigator-link" hash-for-method="LogoutFunctionality">LogoutFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC011_DashboardLoad" class="method navigator-link" hash-for-method="TC011_DashboardLoad">TC011_DashboardLoad</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC015_ProfileDropdownCheck" class="method navigator-link" hash-for-method="TC015_ProfileDropdownCheck">TC015_ProfileDropdownCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -184,9 +184,111 @@
                   </a> <!-- TC016_NavigatetoUsers -->
                   <span class="method-name">TC016_NavigatetoUsers</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.orangehrm.tests.TC016_NavigatetoUsers.TC016_NavigatetoUsers(TC016_NavigatetoUsers.java:32)
+	at com.orangehrm.tests.TC016_NavigatetoUsers.TC016_NavigatetoUsers(TC016_NavigatetoUsers.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Series_Suite-class-failed -->
+          <div class="suite-Series_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.tests.TC011_DashboardLoad</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011_DashboardLoad">
+                  </a> <!-- TC011_DashboardLoad -->
+                  <span class="method-name">TC011_DashboardLoad</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@title=&apos;Assign Leave&apos;]//*[name()=&apos;svg&apos;]//*[name()=&apos;g&apos; and contains(@fill,&apos;currentCol&apos;)]//*[name()=&apos;path&apos; and contains(@class,&apos;cls-1&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangehrm.tests.BaseClass.waitForElementTobeVisible(BaseClass.java:51)
+	at com.orangehrm.tests.TC011_DashboardLoad.TC011_DashboardLoad(TC011_DashboardLoad.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@title=&apos;Assign Leave&apos;]//*[name()=&apos;svg&apos;]//*[name()=&apos;g&apos; and contains(@fill,&apos;currentCol&apos;)]//*[name()=&apos;path&apos; and contains(@class,&apos;cls-1&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37e6d4461a7af86d01fac89f5161d140, findElement {using=xpath, value=//button[@title=&apos;Assign Leave&apos;]//*[name()=&apos;svg&apos;]//*[name()=&apos;g&apos; and contains(@fill,&apos;currentCol&apos;)]//*[name()=&apos;path&apos; and contains(@class,&apos;cls-1&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\omsai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54187/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37e6d4461a7af86d01fac89f5161d140
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Series_Suite-class-failed -->
+          <div class="suite-Series_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.tests.TC010_LogoutFunctionality</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogoutFunctionality">
+                  </a> <!-- LogoutFunctionality -->
+                  <span class="method-name">LogoutFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //a[normalize-space()=&apos;Logout&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.orangehrm.tests.BaseClass.waitForElementTobeVisible(BaseClass.java:51)
+	at com.orangehrm.tests.TC010_LogoutFunctionality.LogoutFunctionality(TC010_LogoutFunctionality.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Logout&apos;]&quot;}
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d7e33b93cd90c0679ad13f6b8d384b8, findElement {using=xpath, value=//a[normalize-space()=&apos;Logout&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\omsai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59064/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d7e33b93cd90c0679ad13f6b8d384b8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -255,21 +357,6 @@
           <div class="suite-Series_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.orangehrm.tests.TC011_DashboardLoad</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC011_DashboardLoad">
-                  </a> <!-- TC011_DashboardLoad -->
-                  <span class="method-name">TC011_DashboardLoad</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Series_Suite-class-passed -->
-          <div class="suite-Series_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.orangehrm.tests.TC006_BothFieldsBlank</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -278,21 +365,6 @@
                   <a name="BothFieldsBlank">
                   </a> <!-- BothFieldsBlank -->
                   <span class="method-name">BothFieldsBlank</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Series_Suite-class-passed -->
-          <div class="suite-Series_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.orangehrm.tests.TC010_LogoutFunctionality</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LogoutFunctionality">
-                  </a> <!-- LogoutFunctionality -->
-                  <span class="method-name">LogoutFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -393,45 +465,45 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC016_NavigatetoUsers')
-data.setCell(0, 2, 'com.orangehrm.tests.TC016_NavigatetoUsers')
-data.setCell(0, 3, 18667);
+data.setCell(0, 1, 'LogoutFunctionality')
+data.setCell(0, 2, 'com.orangehrm.tests.TC010_LogoutFunctionality')
+data.setCell(0, 3, 26057);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LogoutFunctionality')
-data.setCell(1, 2, 'com.orangehrm.tests.TC010_LogoutFunctionality')
-data.setCell(1, 3, 12270);
+data.setCell(1, 1, 'TC011_DashboardLoad')
+data.setCell(1, 2, 'com.orangehrm.tests.TC011_DashboardLoad')
+data.setCell(1, 3, 22952);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC011_DashboardLoad')
-data.setCell(2, 2, 'com.orangehrm.tests.TC011_DashboardLoad')
-data.setCell(2, 3, 8429);
+data.setCell(2, 1, 'TC016_NavigatetoUsers')
+data.setCell(2, 2, 'com.orangehrm.tests.TC016_NavigatetoUsers')
+data.setCell(2, 3, 15151);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC015_ProfileDropdownCheck')
-data.setCell(3, 2, 'com.orangehrm.tests.TC015_ProfileDropdownCheck')
-data.setCell(3, 3, 8316);
+data.setCell(3, 1, 'ValidLogin')
+data.setCell(3, 2, 'com.orangehrm.tests.TC001_ValidLogin')
+data.setCell(3, 3, 5512);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'ValidLogin')
-data.setCell(4, 2, 'com.orangehrm.tests.TC001_ValidLogin')
-data.setCell(4, 3, 6108);
+data.setCell(4, 1, 'TC015_ProfileDropdownCheck')
+data.setCell(4, 2, 'com.orangehrm.tests.TC015_ProfileDropdownCheck')
+data.setCell(4, 3, 5174);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'InvalidUsername')
-data.setCell(5, 2, 'com.orangehrm.tests.TC002_InvalidUsername')
-data.setCell(5, 3, 3682);
+data.setCell(5, 1, 'InvalidPassword')
+data.setCell(5, 2, 'com.orangehrm.tests.TC003_InvalidPassword')
+data.setCell(5, 3, 3796);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'InvalidPassword')
-data.setCell(6, 2, 'com.orangehrm.tests.TC003_InvalidPassword')
-data.setCell(6, 3, 3557);
+data.setCell(6, 1, 'InvalidUsername')
+data.setCell(6, 2, 'com.orangehrm.tests.TC002_InvalidUsername')
+data.setCell(6, 3, 3465);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'BlankPassword')
-data.setCell(7, 2, 'com.orangehrm.tests.TC005_BlankPassword')
-data.setCell(7, 3, 1974);
+data.setCell(7, 1, 'BlankUsername')
+data.setCell(7, 2, 'com.orangehrm.tests.TC004_BlankUsername')
+data.setCell(7, 3, 2218);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'BlankUsername')
-data.setCell(8, 2, 'com.orangehrm.tests.TC004_BlankUsername')
-data.setCell(8, 3, 1885);
+data.setCell(8, 1, 'BlankPassword')
+data.setCell(8, 2, 'com.orangehrm.tests.TC005_BlankPassword')
+data.setCell(8, 3, 2033);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'BothFieldsBlank')
 data.setCell(9, 2, 'com.orangehrm.tests.TC006_BothFieldsBlank')
-data.setCell(9, 3, 1825);
+data.setCell(9, 3, 1842);
 window.suiteTableData['Series_Suite']= { tableData: data, tableDiv: 'times-div-Series_Suite'}
 return data;
 }
@@ -469,148 +541,152 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ValidLogin</span>
-                <span class="method-start">18828 ms</span>
+                <span class="method-start">69807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24954 ms</span>
+                <span class="method-start">75345 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC002_InvalidUsername</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">26250 ms</span>
+                <span class="method-start">77877 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">InvalidUsername</span>
-                <span class="method-start">33409 ms</span>
+                <span class="method-start">85091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37094 ms</span>
+                <span class="method-start">88558 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC003_InvalidPassword</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">37868 ms</span>
+                <span class="method-start">89438 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">InvalidPassword</span>
-                <span class="method-start">44588 ms</span>
+                <span class="method-start">96348 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48148 ms</span>
+                <span class="method-start">100149 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC004_BlankUsername</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">48982 ms</span>
+                <span class="method-start">101774 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">BlankUsername</span>
-                <span class="method-start">55564 ms</span>
+                <span class="method-start">112749 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57452 ms</span>
+                <span class="method-start">114970 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC005_BlankPassword</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">58303 ms</span>
+                <span class="method-start">115938 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">BlankPassword</span>
-                <span class="method-start">64721 ms</span>
+                <span class="method-start">122288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66698 ms</span>
+                <span class="method-start">124325 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC006_BothFieldsBlank</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">67674 ms</span>
+                <span class="method-start">125595 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">BothFieldsBlank</span>
-                <span class="method-start">73772 ms</span>
+                <span class="method-start">132376 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75602 ms</span>
+                <span class="method-start">134222 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC010_LogoutFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">76367 ms</span>
+                <span class="method-start">135018 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">LogoutFunctionality</span>
-                <span class="method-start">82397 ms</span>
+                <span class="method-start">141736 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94678 ms</span>
+                <span class="method-start">168057 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC011_DashboardLoad</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">95881 ms</span>
+                <span class="method-start">169120 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC011_DashboardLoad</span>
-                <span class="method-start">113959 ms</span>
+                <span class="method-start">175103 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">122395 ms</span>
+                <span class="method-start">198321 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC015_ProfileDropdownCheck</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">123856 ms</span>
+                <span class="method-start">199260 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC015_ProfileDropdownCheck</span>
-                <span class="method-start">134334 ms</span>
+                <span class="method-start">205311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">142664 ms</span>
+                <span class="method-start">210488 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC016_NavigatetoUsers</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">143844 ms</span>
+                <span class="method-start">211353 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC016_NavigatetoUsers</span>
-                <span class="method-start">152532 ms</span>
+                <span class="method-start">217709 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">171532 ms</span>
+                <span class="method-start">233085 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

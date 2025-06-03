@@ -9,7 +9,7 @@ import com.orangehrm.pages.LoginPage;
 public class TC015_ProfileDropdownCheck extends BaseClass {
 
 	@Test
-	public void TC015_ProfileDropdownCheck() {
+	public void ProfileDropdownCheck() {
 
 		LoginPage loginpage = new LoginPage(driver);
 		waitForElementTobeVisible(loginpage.return_username());

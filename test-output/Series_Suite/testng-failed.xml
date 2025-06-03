@@ -13,6 +13,20 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.orangehrm.tests.TC016_NavigatetoUsers -->
+      <class name="com.orangehrm.tests.TC011_DashboardLoad">
+        <methods>
+          <include name="TC011_DashboardLoad"/>
+          <include name="setuP"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.TC011_DashboardLoad -->
+      <class name="com.orangehrm.tests.TC010_LogoutFunctionality">
+        <methods>
+          <include name="setuP"/>
+          <include name="LogoutFunctionality"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.orangehrm.tests.TC010_LogoutFunctionality -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Series_Suite] -->

@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-03T01:20:39 IST" name="Series_Suite" finished-at="2025-06-03T01:23:32 IST" duration-ms="173177">
+  <suite started-at="2025-06-03T07:49:42 IST" name="Series_Suite" finished-at="2025-06-03T07:53:37 IST" duration-ms="234924">
     <groups>
     </groups>
-    <test started-at="2025-06-03T01:20:39 IST" name="Test" finished-at="2025-06-03T01:23:32 IST" duration-ms="173177">
+    <test started-at="2025-06-03T07:49:42 IST" name="Test" finished-at="2025-06-03T07:53:37 IST" duration-ms="234924">
       <class name="com.orangehrm.tests.TC015_ProfileDropdownCheck">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@130dca52]" started-at="2025-06-03T01:22:44 IST" name="setuP" finished-at="2025-06-03T01:22:54 IST" duration-ms="10477" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@130dca52]" started-at="2025-06-03T07:53:02 IST" name="setuP" finished-at="2025-06-03T07:53:08 IST" duration-ms="6050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="TC015_ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@130dca52]" started-at="2025-06-03T01:22:54 IST" name="TC015_ProfileDropdownCheck" finished-at="2025-06-03T01:23:03 IST" duration-ms="8316" status="PASS">
+        <test-method signature="TC015_ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@130dca52]" started-at="2025-06-03T07:53:08 IST" name="TC015_ProfileDropdownCheck" finished-at="2025-06-03T07:53:14 IST" duration-ms="5174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC015_ProfileDropdownCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@130dca52]" started-at="2025-06-03T01:23:03 IST" name="tearDown" finished-at="2025-06-03T01:23:04 IST" duration-ms="1179" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@130dca52]" started-at="2025-06-03T07:53:14 IST" name="tearDown" finished-at="2025-06-03T07:53:14 IST" duration-ms="864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC015_ProfileDropdownCheck -->
       <class name="com.orangehrm.tests.TC006_BothFieldsBlank">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@2826f61]" started-at="2025-06-03T01:21:48 IST" name="setuP" finished-at="2025-06-03T01:21:54 IST" duration-ms="6097" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@2826f61]" started-at="2025-06-03T07:51:49 IST" name="setuP" finished-at="2025-06-03T07:51:56 IST" duration-ms="6779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@2826f61]" started-at="2025-06-03T01:21:54 IST" name="BothFieldsBlank" finished-at="2025-06-03T01:21:55 IST" duration-ms="1825" status="PASS">
+        <test-method signature="BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@2826f61]" started-at="2025-06-03T07:51:56 IST" name="BothFieldsBlank" finished-at="2025-06-03T07:51:57 IST" duration-ms="1842" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BothFieldsBlank -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@2826f61]" started-at="2025-06-03T01:21:55 IST" name="tearDown" finished-at="2025-06-03T01:21:56 IST" duration-ms="764" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@2826f61]" started-at="2025-06-03T07:51:57 IST" name="tearDown" finished-at="2025-06-03T07:51:58 IST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC006_BothFieldsBlank -->
       <class name="com.orangehrm.tests.TC001_ValidLogin">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@28ec166e]" started-at="2025-06-03T01:20:40 IST" name="setuP" finished-at="2025-06-03T01:20:59 IST" duration-ms="18795" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@28ec166e]" started-at="2025-06-03T07:49:43 IST" name="setuP" finished-at="2025-06-03T07:50:53 IST" duration-ms="69756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@28ec166e]" started-at="2025-06-03T01:20:59 IST" name="ValidLogin" finished-at="2025-06-03T01:21:05 IST" duration-ms="6108" status="PASS">
+        <test-method signature="ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@28ec166e]" started-at="2025-06-03T07:50:53 IST" name="ValidLogin" finished-at="2025-06-03T07:50:58 IST" duration-ms="5512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@28ec166e]" started-at="2025-06-03T01:21:05 IST" name="tearDown" finished-at="2025-06-03T01:21:06 IST" duration-ms="1293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@28ec166e]" started-at="2025-06-03T07:50:58 IST" name="tearDown" finished-at="2025-06-03T07:51:01 IST" duration-ms="2528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC001_ValidLogin -->
       <class name="com.orangehrm.tests.TC016_NavigatetoUsers">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@2654635]" started-at="2025-06-03T01:23:04 IST" name="setuP" finished-at="2025-06-03T01:23:12 IST" duration-ms="8688" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@2654635]" started-at="2025-06-03T07:53:14 IST" name="setuP" finished-at="2025-06-03T07:53:21 IST" duration-ms="6355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="TC016_NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@2654635]" started-at="2025-06-03T01:23:12 IST" name="TC016_NavigatetoUsers" finished-at="2025-06-03T01:23:31 IST" duration-ms="18667" status="FAIL">
+        <test-method signature="TC016_NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@2654635]" started-at="2025-06-03T07:53:21 IST" name="TC016_NavigatetoUsers" finished-at="2025-06-03T07:53:36 IST" duration-ms="15151" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -64,7 +64,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at com.orangehrm.tests.TC016_NavigatetoUsers.TC016_NavigatetoUsers(TC016_NavigatetoUsers.java:32)
+at com.orangehrm.tests.TC016_NavigatetoUsers.TC016_NavigatetoUsers(TC016_NavigatetoUsers.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -97,91 +97,231 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC016_NavigatetoUsers -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@2654635]" started-at="2025-06-03T01:23:31 IST" name="tearDown" finished-at="2025-06-03T01:23:32 IST" duration-ms="961" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@2654635]" started-at="2025-06-03T07:53:36 IST" name="tearDown" finished-at="2025-06-03T07:53:37 IST" duration-ms="1199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC016_NavigatetoUsers -->
       <class name="com.orangehrm.tests.TC003_InvalidPassword">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@4df5bcb4]" started-at="2025-06-03T01:21:18 IST" name="setuP" finished-at="2025-06-03T01:21:24 IST" duration-ms="6719" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@4df5bcb4]" started-at="2025-06-03T07:51:13 IST" name="setuP" finished-at="2025-06-03T07:51:19 IST" duration-ms="6909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@4df5bcb4]" started-at="2025-06-03T01:21:24 IST" name="InvalidPassword" finished-at="2025-06-03T01:21:28 IST" duration-ms="3557" status="PASS">
+        <test-method signature="InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@4df5bcb4]" started-at="2025-06-03T07:51:19 IST" name="InvalidPassword" finished-at="2025-06-03T07:51:23 IST" duration-ms="3796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@4df5bcb4]" started-at="2025-06-03T01:21:28 IST" name="tearDown" finished-at="2025-06-03T01:21:29 IST" duration-ms="833" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@4df5bcb4]" started-at="2025-06-03T07:51:23 IST" name="tearDown" finished-at="2025-06-03T07:51:25 IST" duration-ms="1624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC003_InvalidPassword -->
       <class name="com.orangehrm.tests.TC011_DashboardLoad">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4d9ac0b4]" started-at="2025-06-03T01:22:16 IST" name="setuP" finished-at="2025-06-03T01:22:34 IST" duration-ms="18077" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4d9ac0b4]" started-at="2025-06-03T07:52:32 IST" name="setuP" finished-at="2025-06-03T07:52:38 IST" duration-ms="5981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="TC011_DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4d9ac0b4]" started-at="2025-06-03T01:22:34 IST" name="TC011_DashboardLoad" finished-at="2025-06-03T01:22:42 IST" duration-ms="8429" status="PASS">
+        <test-method signature="TC011_DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4d9ac0b4]" started-at="2025-06-03T07:52:38 IST" name="TC011_DashboardLoad" finished-at="2025-06-03T07:53:01 IST" duration-ms="22952" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@title='Assign Leave']//*[name()='svg']//*[name()='g' and contains(@fill,'currentCol')]//*[name()='path' and contains(@class,'cls-1')]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //button[@title='Assign Leave']//*[name()='svg']//*[name()='g' and contains(@fill,'currentCol')]//*[name()='path' and contains(@class,'cls-1')]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.orangehrm.tests.BaseClass.waitForElementTobeVisible(BaseClass.java:51)
+at com.orangehrm.tests.TC011_DashboardLoad.TC011_DashboardLoad(TC011_DashboardLoad.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Assign Leave']//*[name()='svg']//*[name()='g' and contains(@fill,'currentCol')]//*[name()='path' and contains(@class,'cls-1')]"}
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37e6d4461a7af86d01fac89f5161d140, findElement {using=xpath, value=//button[@title='Assign Leave']//*[name()='svg']//*[name()='g' and contains(@fill,'currentCol')]//*[name()='path' and contains(@class,'cls-1')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\omsai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54187/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37e6d4461a7af86d01fac89f5161d140
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC011_DashboardLoad -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4d9ac0b4]" started-at="2025-06-03T01:22:42 IST" name="tearDown" finished-at="2025-06-03T01:22:44 IST" duration-ms="1460" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4d9ac0b4]" started-at="2025-06-03T07:53:01 IST" name="tearDown" finished-at="2025-06-03T07:53:02 IST" duration-ms="938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC011_DashboardLoad -->
       <class name="com.orangehrm.tests.TC010_LogoutFunctionality">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@62727399]" started-at="2025-06-03T01:21:56 IST" name="setuP" finished-at="2025-06-03T01:22:02 IST" duration-ms="6029" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@62727399]" started-at="2025-06-03T07:51:58 IST" name="setuP" finished-at="2025-06-03T07:52:05 IST" duration-ms="6717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@62727399]" started-at="2025-06-03T01:22:02 IST" name="LogoutFunctionality" finished-at="2025-06-03T01:22:15 IST" duration-ms="12270" status="PASS">
+        <test-method signature="LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@62727399]" started-at="2025-06-03T07:52:05 IST" name="LogoutFunctionality" finished-at="2025-06-03T07:52:31 IST" duration-ms="26057" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[normalize-space()='Logout']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[normalize-space()='Logout']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.orangehrm.tests.BaseClass.waitForElementTobeVisible(BaseClass.java:51)
+at com.orangehrm.tests.TC010_LogoutFunctionality.LogoutFunctionality(TC010_LogoutFunctionality.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Logout']"}
+  (Session info: chrome=137.0.7151.68)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d7e33b93cd90c0679ad13f6b8d384b8, findElement {using=xpath, value=//a[normalize-space()='Logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\omsai\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59064/devtoo..., se:cdpVersion: 137.0.7151.68, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d7e33b93cd90c0679ad13f6b8d384b8
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@62727399]" started-at="2025-06-03T01:22:15 IST" name="tearDown" finished-at="2025-06-03T01:22:16 IST" duration-ms="1202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@62727399]" started-at="2025-06-03T07:52:31 IST" name="tearDown" finished-at="2025-06-03T07:52:32 IST" duration-ms="1062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC010_LogoutFunctionality -->
       <class name="com.orangehrm.tests.TC005_BlankPassword">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@13d9b21f]" started-at="2025-06-03T01:21:38 IST" name="setuP" finished-at="2025-06-03T01:21:45 IST" duration-ms="6417" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@13d9b21f]" started-at="2025-06-03T07:51:39 IST" name="setuP" finished-at="2025-06-03T07:51:45 IST" duration-ms="6349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@13d9b21f]" started-at="2025-06-03T01:21:45 IST" name="BlankPassword" finished-at="2025-06-03T01:21:47 IST" duration-ms="1974" status="PASS">
+        <test-method signature="BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@13d9b21f]" started-at="2025-06-03T07:51:45 IST" name="BlankPassword" finished-at="2025-06-03T07:51:47 IST" duration-ms="2033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BlankPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@13d9b21f]" started-at="2025-06-03T01:21:47 IST" name="tearDown" finished-at="2025-06-03T01:21:48 IST" duration-ms="975" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@13d9b21f]" started-at="2025-06-03T07:51:47 IST" name="tearDown" finished-at="2025-06-03T07:51:49 IST" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC005_BlankPassword -->
       <class name="com.orangehrm.tests.TC002_InvalidUsername">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5629510]" started-at="2025-06-03T01:21:06 IST" name="setuP" finished-at="2025-06-03T01:21:13 IST" duration-ms="7158" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5629510]" started-at="2025-06-03T07:51:01 IST" name="setuP" finished-at="2025-06-03T07:51:08 IST" duration-ms="7213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5629510]" started-at="2025-06-03T01:21:13 IST" name="InvalidUsername" finished-at="2025-06-03T01:21:17 IST" duration-ms="3682" status="PASS">
+        <test-method signature="InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5629510]" started-at="2025-06-03T07:51:08 IST" name="InvalidUsername" finished-at="2025-06-03T07:51:12 IST" duration-ms="3465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5629510]" started-at="2025-06-03T01:21:17 IST" name="tearDown" finished-at="2025-06-03T01:21:18 IST" duration-ms="773" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5629510]" started-at="2025-06-03T07:51:12 IST" name="tearDown" finished-at="2025-06-03T07:51:13 IST" duration-ms="879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC002_InvalidUsername -->
       <class name="com.orangehrm.tests.TC004_BlankUsername">
-        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@12c7a01b]" started-at="2025-06-03T01:21:29 IST" name="setuP" finished-at="2025-06-03T01:21:35 IST" duration-ms="6580" status="PASS">
+        <test-method is-config="true" signature="setuP()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@12c7a01b]" started-at="2025-06-03T07:51:25 IST" name="setuP" finished-at="2025-06-03T07:51:36 IST" duration-ms="10972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@12c7a01b]" started-at="2025-06-03T01:21:35 IST" name="BlankUsername" finished-at="2025-06-03T01:21:37 IST" duration-ms="1885" status="PASS">
+        <test-method signature="BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@12c7a01b]" started-at="2025-06-03T07:51:36 IST" name="BlankUsername" finished-at="2025-06-03T07:51:38 IST" duration-ms="2218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BlankUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@12c7a01b]" started-at="2025-06-03T01:21:37 IST" name="tearDown" finished-at="2025-06-03T01:21:38 IST" duration-ms="850" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@12c7a01b]" started-at="2025-06-03T07:51:38 IST" name="tearDown" finished-at="2025-06-03T07:51:39 IST" duration-ms="967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -22,6 +22,8 @@ public class TC002_InvalidUsername extends BaseClass {
 		String ActualErrormsg = loginpage.gettext_message_Invalidcredentials();
 		String ExpectedErrormsg = "Invalid credentials";
 
+		logger.info("Actual Error message"+ActualErrormsg);
+		logger.info("Expected Error message"+ExpectedErrormsg);
 		
 		Assert.assertEquals(ActualErrormsg, ExpectedErrormsg);
 

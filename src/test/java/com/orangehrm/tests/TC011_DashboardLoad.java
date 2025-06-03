@@ -11,7 +11,7 @@ import com.orangehrm.pages.LoginPage;
 public class TC011_DashboardLoad extends BaseClass {
 
 	@Test
-	public void TC011_DashboardLoad() {
+	public void DashboardLoad() {
 
 		LoginPage loginpage = new LoginPage(driver);
 		waitForElementTobeVisible(loginpage.return_username());
