@@ -18,6 +18,8 @@
       <class name="com.orangehrm.tests.TC011_DashboardLoad"/>
       <class name="com.orangehrm.tests.TC015_ProfileDropdownCheck"/>
       <class name="com.orangehrm.tests.TC016_NavigatetoUsers"/>
+     <!--  <class name="com.orangehrm.tests.TC017_AddNewUser"/>   -->
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Series_Suite -->

@@ -16,6 +16,7 @@ public class TC001_ValidLogin extends BaseClass {
 		LoginPage loginpage = new LoginPage(driver);
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername("Admin");
+		
 		waitForElementTobeVisible(loginpage.return_password());
 		loginpage.sendPassword("admin123");
 		waitForElementTobeVisible(loginpage.return_submitbtn());

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -53,6 +54,10 @@ public class BaseClass {
 
 	public void waitForElementTobeVisible(WebElement webelement) {
 		wait.until(ExpectedConditions.visibilityOf(webelement));
+	}
+	
+	public void waitForVisibilityOfAllElements(List<WebElement> webelement) {
+		wait.until(ExpectedConditions.visibilityOfAllElements(webelement));
 	}
 
 	public String captureScreen(String tname) throws IOException {

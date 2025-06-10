@@ -29,7 +29,7 @@ public class DashBoardPage {
 	@FindBy(xpath="//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-dashboard-widget']//div[6]") 
 	 private WebElement myTimesheet;
 	
-	@FindBy(xpath="//a[@class='oxd-main-menu-item active']") 
+	@FindBy(xpath="//*[@class=\"oxd-sidepanel-body\"]/ul/li") 
 	 private WebElement admin;
 	
 	// Return locators

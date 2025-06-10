@@ -18,14 +18,25 @@ public class AdminPage {
 	@FindBy(xpath = "//div[@class=\"orangehrm-container\"]/div/div/div")
 	private List<WebElement> Dashboardelement;
 
+	@FindBy(xpath = "//button[normalize-space()='Add']")
+	private WebElement add;
+
 	// Return
 	public List<WebElement> retturn_Dashboardelement() {
 		return Dashboardelement;
 	}
 
+	public WebElement return_addbtn() {
+		return add;
+	}
+
 	// Actions
 	public int getUserRowCount() {
 		return Dashboardelement.size();
+	}
+
+	public void clickOnaddBtn() {
+		add.click();
 	}
 
 }
