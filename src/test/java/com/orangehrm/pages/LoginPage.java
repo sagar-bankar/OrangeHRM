@@ -67,6 +67,10 @@ public class LoginPage {
 		return message_Invalidcredentials.getText();
 	}
 	
+	public String getErrorTestOfRequired() {
+		return Required.getText();
+	}
+	
 	public boolean isVisible_Required() {
 		return Required.isDisplayed();
 	}

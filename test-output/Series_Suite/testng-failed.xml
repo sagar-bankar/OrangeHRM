@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.orangehrm.tests.TC016_NavigatetoUsers">
+      <class name="com.orangehrm.tests.TC001_ValidLogin">
         <methods>
           <include name="setuP"/>
+          <include name="ValidLogin"/>
           <include name="tearDown"/>
-          <include name="NavigatetoUsers"/>
         </methods>
-      </class> <!-- com.orangehrm.tests.TC016_NavigatetoUsers -->
+      </class> <!-- com.orangehrm.tests.TC001_ValidLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Series_Suite] -->

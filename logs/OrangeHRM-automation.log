@@ -158,3 +158,165 @@
 14:56:04.769 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
 14:56:23.645 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
 14:56:23.645 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+16:27:05.188 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\testng.xml"
+16:56:17.887 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+16:56:18.492 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+16:57:08.027 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+16:57:08.622 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+16:57:27.043 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+16:57:46.847 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+16:57:46.848 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+16:58:52.574 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+16:58:53.288 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+16:59:12.671 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+16:59:32.594 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+16:59:32.594 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:00:45.314 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:00:46.022 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:01:54.111 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:01:55.251 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:02:10.839 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:02:26.369 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:02:26.369 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:04:46.395 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:04:46.975 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:04:58.351 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:05:10.166 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:05:10.167 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:09:40.446 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:09:41.214 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:10:07.059 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:10:29.918 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:10:29.918 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:12:40.540 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:12:41.262 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:13:05.875 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:13:38.711 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:13:38.712 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:15:39.694 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:15:40.264 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:15:56.093 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:16:30.774 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:16:30.774 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:19:07.064 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:19:07.913 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:19:31.721 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:19:51.424 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:19:51.425 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:22:53.985 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:22:54.696 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:23:13.722 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:23:30.130 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:23:30.130 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+17:26:39.475 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+17:26:40.590 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+17:27:02.041 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+17:27:49.734 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+17:27:49.735 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+18:20:32.800 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+18:20:33.464 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+18:30:57.614 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+18:30:58.603 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+18:31:37.685 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+18:31:37.685 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+18:44:44.757 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+18:44:45.418 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+18:44:59.060 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+18:45:12.329 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+18:45:12.329 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+18:46:39.871 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+18:46:40.518 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+18:46:58.844 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+18:46:58.844 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+19:07:05.890 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+19:07:06.551 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+19:07:25.262 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+19:07:40.800 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+19:07:40.801 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+19:38:20.772 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+19:38:21.428 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+19:38:39.614 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+19:39:07.234 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+19:39:07.234 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+21:27:58.208 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+21:27:59.002 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+21:28:15.906 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+21:28:31.910 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+21:28:31.910 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+21:47:34.768 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+21:47:35.598 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+21:47:50.556 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+21:48:03.245 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+21:48:03.245 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+21:54:55.047 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+21:57:24.717 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+21:57:25.486 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+21:57:51.832 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+21:58:05.923 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+21:58:05.924 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+22:02:19.437 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+22:02:20.127 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+22:02:31.510 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+22:02:47.127 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+22:02:47.128 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+22:15:32.615 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+22:15:33.417 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+22:15:53.360 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+22:15:53.360 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+22:19:47.730 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml"
+22:19:50.562 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Workspaces\30-10-2024 On words\OrangeHRM\Serial_suite.xml
+
+22:20:26.297 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+22:20:52.513 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+22:20:52.514 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials
+23:07:37.025 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Workspaces\30-10-2024 On words\OrangeHRM\serialsuite.xml"
+23:07:54.292 [main] INFO  com.orangehrm.tests.TC001_ValidLogin - Log in successfully done...
+23:08:08.067 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Actual Error messageInvalid credentials
+23:08:08.067 [main] INFO  com.orangehrm.tests.TC002_InvalidUsername - Expected Error messageInvalid credentials

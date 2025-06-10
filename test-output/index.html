@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Series_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Series_Suite</span>
+              <span class="suite-name border-passed">Series_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Series_Suite" class="hide-methods failed suite-Series_Suite"> (hide)</a> <!-- hide-methods failed suite-Series_Suite -->
-                      <a href="#" panel-name="suite-Series_Suite" class="show-methods failed suite-Series_Suite"> (show)</a> <!-- show-methods failed suite-Series_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Series_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC016_NavigatetoUsers" class="method navigator-link" hash-for-method="NavigatetoUsers">NavigatetoUsers</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Series_Suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -152,6 +138,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC016_NavigatetoUsers" class="method navigator-link" hash-for-method="NavigatetoUsers">NavigatetoUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Series_Suite" title="com.orangehrm.tests.TC015_ProfileDropdownCheck" class="method navigator-link" hash-for-method="ProfileDropdownCheck">ProfileDropdownCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -172,26 +163,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Series_Suite" class="panel Series_Suite">
-          <div class="suite-Series_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.orangehrm.tests.TC016_NavigatetoUsers</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NavigatetoUsers">
-                  </a> <!-- NavigatetoUsers -->
-                  <span class="method-name">NavigatetoUsers</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.orangehrm.tests.TC016_NavigatetoUsers.NavigatetoUsers(TC016_NavigatetoUsers.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Series_Suite-class-failed -->
           <div class="suite-Series_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -255,6 +226,21 @@
           <div class="suite-Series_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.tests.TC016_NavigatetoUsers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NavigatetoUsers">
+                  </a> <!-- NavigatetoUsers -->
+                  <span class="method-name">NavigatetoUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Series_Suite-class-passed -->
+          <div class="suite-Series_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.orangehrm.tests.TC004_BlankUsername</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -263,21 +249,6 @@
                   <a name="BlankUsername">
                   </a> <!-- BlankUsername -->
                   <span class="method-name">BlankUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Series_Suite-class-passed -->
-          <div class="suite-Series_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.orangehrm.tests.TC005_BlankPassword</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BlankPassword">
-                  </a> <!-- BlankPassword -->
-                  <span class="method-name">BlankPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,14 +271,14 @@
           <div class="suite-Series_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.orangehrm.tests.TC002_InvalidUsername</span>
+              <span class="class-name">com.orangehrm.tests.TC005_BlankPassword</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="InvalidUsername">
-                  </a> <!-- InvalidUsername -->
-                  <span class="method-name">InvalidUsername</span>
+                  <a name="BlankPassword">
+                  </a> <!-- BlankPassword -->
+                  <span class="method-name">BlankPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -323,6 +294,21 @@
                   <a name="BothFieldsBlank">
                   </a> <!-- BothFieldsBlank -->
                   <span class="method-name">BothFieldsBlank</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Series_Suite-class-passed -->
+          <div class="suite-Series_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.orangehrm.tests.TC002_InvalidUsername</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InvalidUsername">
+                  </a> <!-- InvalidUsername -->
+                  <span class="method-name">InvalidUsername</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -395,48 +381,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ValidLogin')
 data.setCell(0, 2, 'com.orangehrm.tests.TC001_ValidLogin')
-data.setCell(0, 3, 12495);
+data.setCell(0, 3, 18213);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NavigatetoUsers')
-data.setCell(1, 2, 'com.orangehrm.tests.TC016_NavigatetoUsers')
-data.setCell(1, 3, 10287);
+data.setCell(1, 1, 'LogoutFunctionality')
+data.setCell(1, 2, 'com.orangehrm.tests.TC010_LogoutFunctionality')
+data.setCell(1, 3, 8507);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LogoutFunctionality')
-data.setCell(2, 2, 'com.orangehrm.tests.TC010_LogoutFunctionality')
-data.setCell(2, 3, 7621);
+data.setCell(2, 1, 'NavigatetoUsers')
+data.setCell(2, 2, 'com.orangehrm.tests.TC016_NavigatetoUsers')
+data.setCell(2, 3, 7982);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'ProfileDropdownCheck')
 data.setCell(3, 2, 'com.orangehrm.tests.TC015_ProfileDropdownCheck')
-data.setCell(3, 3, 7519);
+data.setCell(3, 3, 6820);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'DashboardLoad')
 data.setCell(4, 2, 'com.orangehrm.tests.TC011_DashboardLoad')
-data.setCell(4, 3, 6123);
+data.setCell(4, 3, 6770);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'InvalidPassword')
-data.setCell(5, 2, 'com.orangehrm.tests.TC003_InvalidPassword')
-data.setCell(5, 3, 3683);
+data.setCell(5, 1, 'InvalidUsername')
+data.setCell(5, 2, 'com.orangehrm.tests.TC002_InvalidUsername')
+data.setCell(5, 3, 5999);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'InvalidUsername')
-data.setCell(6, 2, 'com.orangehrm.tests.TC002_InvalidUsername')
-data.setCell(6, 3, 3513);
+data.setCell(6, 1, 'InvalidPassword')
+data.setCell(6, 2, 'com.orangehrm.tests.TC003_InvalidPassword')
+data.setCell(6, 3, 5912);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'BothFieldsBlank')
-data.setCell(7, 2, 'com.orangehrm.tests.TC006_BothFieldsBlank')
-data.setCell(7, 3, 3050);
+data.setCell(7, 1, 'BlankUsername')
+data.setCell(7, 2, 'com.orangehrm.tests.TC004_BlankUsername')
+data.setCell(7, 3, 2401);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'BlankPassword')
 data.setCell(8, 2, 'com.orangehrm.tests.TC005_BlankPassword')
-data.setCell(8, 3, 2599);
+data.setCell(8, 3, 2351);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'BlankUsername')
-data.setCell(9, 2, 'com.orangehrm.tests.TC004_BlankUsername')
-data.setCell(9, 3, 1736);
+data.setCell(9, 1, 'BothFieldsBlank')
+data.setCell(9, 2, 'com.orangehrm.tests.TC006_BothFieldsBlank')
+data.setCell(9, 3, 2289);
 window.suiteTableData['Series_Suite']= { tableData: data, tableDiv: 'times-div-Series_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Series_Suite">
               </div> <!-- times-div-Series_Suite -->
             </div> <!-- times-div -->
@@ -469,148 +455,146 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ValidLogin</span>
-                <span class="method-start">23103 ms</span>
+                <span class="method-start">23630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35670 ms</span>
+                <span class="method-start">41855 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC002_InvalidUsername</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">37847 ms</span>
+                <span class="method-start">43258 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">InvalidUsername</span>
-                <span class="method-start">48424 ms</span>
+                <span class="method-start">54288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51941 ms</span>
+                <span class="method-start">60293 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC003_InvalidPassword</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">53001 ms</span>
+                <span class="method-start">61293 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">InvalidPassword</span>
-                <span class="method-start">60103 ms</span>
+                <span class="method-start">75709 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">63788 ms</span>
+                <span class="method-start">81630 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC004_BlankUsername</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">64902 ms</span>
+                <span class="method-start">82897 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">BlankUsername</span>
-                <span class="method-start">72242 ms</span>
+                <span class="method-start">91649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73981 ms</span>
+                <span class="method-start">94059 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC005_BlankPassword</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">75049 ms</span>
+                <span class="method-start">94951 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">BlankPassword</span>
-                <span class="method-start">82901 ms</span>
+                <span class="method-start">102728 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85507 ms</span>
+                <span class="method-start">105082 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC006_BothFieldsBlank</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">86865 ms</span>
+                <span class="method-start">105978 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">BothFieldsBlank</span>
-                <span class="method-start">95228 ms</span>
+                <span class="method-start">113407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">98281 ms</span>
+                <span class="method-start">115703 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC010_LogoutFunctionality</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">99189 ms</span>
+                <span class="method-start">116576 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LogoutFunctionality</span>
-                <span class="method-start">106354 ms</span>
+                <span class="method-start">124983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">113978 ms</span>
+                <span class="method-start">133496 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC011_DashboardLoad</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">114830 ms</span>
+                <span class="method-start">134519 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">DashboardLoad</span>
-                <span class="method-start">125324 ms</span>
+                <span class="method-start">143437 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">131453 ms</span>
+                <span class="method-start">150219 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC015_ProfileDropdownCheck</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">132372 ms</span>
+                <span class="method-start">151809 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ProfileDropdownCheck</span>
-                <span class="method-start">139074 ms</span>
+                <span class="method-start">159938 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">146600 ms</span>
+                <span class="method-start">166766 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.orangehrm.tests.TC016_NavigatetoUsers</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setuP</span>
-                <span class="method-start">147824 ms</span>
+                <span class="method-start">167720 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">NavigatetoUsers</span>
-                <span class="method-start">156510 ms</span>
+                <span class="method-start">175177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">167573 ms</span>
+                <span class="method-start">183163 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

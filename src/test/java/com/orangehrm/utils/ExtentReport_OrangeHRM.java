@@ -18,8 +18,9 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 
 	// Declare ExtentReports and ExtentTest objects
 
-	private ExtentReports extent;
-	private ExtentTest test;
+	private static ExtentReports extent;
+	private static ExtentTest test;
+	private static ThreadLocal<ExtentTest> extentTest =new ThreadLocal<>();
 
 	public void onStart(ITestContext context) {
 		// This method is called before any test method is run
@@ -30,9 +31,11 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 		ExtentSparkReporter htmlReporter = new ExtentSparkReporter(
 				"C:\\Workspaces\\30-10-2024 On words\\OrangeHRM\\Reports\\" + reportFileName);
 		htmlReporter.config().setDocumentTitle("OrangeHRM Report"); // Title of the report
-		htmlReporter.config().setReportName("Functional Test Report"); // Name of the report
-		
-		
+		// htmlReporter.config().setReportName("Functional Test Report"); // Name of the
+		// report
+		htmlReporter.config().setReportName(
+				"<img  src='C:\\Workspaces\\30-10-2024 On words\\OrangeHRM\\src\\test\\resources\\ohrm_branding.png' height='40' width='60' style='vertical-align:middle; background-color:white;'/>");
+
 		// htmlReporter.config().setTheme(Theme.STANDARD); // Theme of the report
 		htmlReporter.config().setTheme(Theme.DARK); // Theme of the report
 
@@ -59,34 +62,42 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		// This method is called when a test starts
-		test = extent.createTest(result.getTestClass().getName()); // Create a new test in the report
+		//test = extent.createTest(result.getTestClass().getName()); // Create a new test in the report
+	
+		// Create test with class name + method name (for clarity)
+	    String testName = result.getTestClass().getName() + " : " + result.getMethod().getMethodName();
+	    ExtentTest test = extent.createTest(testName);
+	    
+	    // Set in ThreadLocal for use in test
+	    extentTest.set(test);
+	
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		// This method is called when a test is successful
-		test.pass("Test Passed"); // Log a pass message in the report
+		getTest().pass("Test Passed"); // Log a pass message in the report
 	}
 
 	public void onTestFailure(ITestResult result) {
 		// This method is called when a test fails
-		test.fail(result.getThrowable()); // Log the failure exception in the report
+		getTest().fail(result.getThrowable()); // Log the failure exception in the report
 
 		// BaseClass baseclass=new BaseClass();
 
 		try {
 			String imgPath = new BaseClass().captureScreen(result.getName());
-			test.addScreenCaptureFromPath(imgPath);
+			getTest().addScreenCaptureFromPath(imgPath);
 		} catch (IOException e) {
-			test.warning("Screenshot capture failed: " + e.getMessage());
+			getTest().warning("Screenshot capture failed: " + e.getMessage());
 		} catch (Exception e) {
-			test.warning("Unexpected error while capturing screenshot: " + e.getMessage());
+			getTest().warning("Unexpected error while capturing screenshot: " + e.getMessage());
 		}
 
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		// This method is called when a test is skipped
-		test.skip(result.getThrowable()); // Log the skip exception in the report
+		getTest().skip(result.getThrowable()); // Log the skip exception in the report
 	}
 
 	public void onFinish(ITestContext context) {
@@ -98,5 +109,9 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 		// This method is called for tests that fail but are within the success
 		// percentage defined in TestNG
 		// Not commonly used, so implementation can be skipped or customized as needed
+	}
+	
+	public static ExtentTest getTest() {
+	return	extentTest.get();
 	}
 }

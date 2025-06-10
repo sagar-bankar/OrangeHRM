@@ -21,6 +21,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.orangehrm.utils.ExtentReport_OrangeHRM;
+
 public class BaseClass {
 	public static WebDriver driver;
 	public WebDriverWait wait;
@@ -43,6 +45,9 @@ public class BaseClass {
 			System.out.println("Brouser is not valid");
 
 		}
+		//ExtentReport_OrangeHRM.getTest().info("Browser launched successfully.");
+		
+		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		logger = LogManager.getLogger(this.getClass());
 
@@ -76,6 +81,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
+		//ExtentReport_OrangeHRM.getTest().info("Browser closed.");
 	}
 
 }
