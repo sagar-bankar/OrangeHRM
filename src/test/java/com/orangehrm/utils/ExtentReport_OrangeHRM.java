@@ -1,5 +1,6 @@
 package com.orangehrm.utils;
 
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -20,9 +21,20 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 
 	private static ExtentReports extent;
 	private static ExtentTest test;
-	private static ThreadLocal<ExtentTest> extentTest =new ThreadLocal<>();
+	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
 
 	public void onStart(ITestContext context) {
+		// to clean report if ie exists
+		File reportfile = new File(System.getProperty("user.dir") + "/Reports/");
+		if (reportfile.exists()) {
+			for (File file : reportfile.listFiles()) {
+				if (file.isFile()) {
+					file.delete();
+
+				}
+			}
+		}
+
 		// This method is called before any test method is run
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // Time stamp
 		String reportFileName = "OrangeHRM-Extent-report-" + timeStamp + ".html"; // Report file name
@@ -62,15 +74,16 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
 		// This method is called when a test starts
-		//test = extent.createTest(result.getTestClass().getName()); // Create a new test in the report
-	
+		// test = extent.createTest(result.getTestClass().getName()); // Create a new
+		// test in the report
+
 		// Create test with class name + method name (for clarity)
-	    String testName = result.getTestClass().getName() + " : " + result.getMethod().getMethodName();
-	    ExtentTest test = extent.createTest(testName);
-	    
-	    // Set in ThreadLocal for use in test
-	    extentTest.set(test);
-	
+		String testName = result.getTestClass().getName() + " : " + result.getMethod().getMethodName();
+		ExtentTest test = extent.createTest(testName);
+
+		// Set in ThreadLocal for use in test
+		extentTest.set(test);
+
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -110,8 +123,8 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 		// percentage defined in TestNG
 		// Not commonly used, so implementation can be skipped or customized as needed
 	}
-	
+
 	public static ExtentTest getTest() {
-	return	extentTest.get();
+		return extentTest.get();
 	}
 }
