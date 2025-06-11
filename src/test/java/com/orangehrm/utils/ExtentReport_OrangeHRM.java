@@ -41,7 +41,7 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 
 		// Initialize ExtentSparkReporter with the path where the report will be saved
 		ExtentSparkReporter htmlReporter = new ExtentSparkReporter(
-				"C:\\Workspaces\\30-10-2024 On words\\OrangeHRM\\Reports\\" + reportFileName);
+				System.getProperty("user.dir")+"/Reports/" + reportFileName);
 		htmlReporter.config().setDocumentTitle("OrangeHRM Report"); // Title of the report
 		// htmlReporter.config().setReportName("Functional Test Report"); // Name of the
 		// report
@@ -65,8 +65,12 @@ public class ExtentReport_OrangeHRM implements ITestListener {
 		extent.setSystemInfo("Browser", "Chrome");
 		extent.setSystemInfo("Client", "OrangeHRM");
 		extent.setSystemInfo("Java Version", "1.8/11");
-		extent.setSystemInfo("Build URL", "OrangeHRM");
-		extent.setSystemInfo("Host Name", "Jenkins_Agent_01");
+		
+		//Real build url
+		String Build_URL=System.getProperty("build.url", "Not Avaailable");
+		extent.setSystemInfo("Build URL", Build_URL);
+		
+		extent.setSystemInfo("Project Name", "orangehrm-automation-suite");
 		extent.setSystemInfo("Environment", "QA");
 		extent.setSystemInfo("Executed By", "SAGAR BANKAR");
 
