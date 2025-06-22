@@ -8,9 +8,9 @@ import com.orangehrm.utils.ExtentReport_OrangeHRM;
 
 public class TC002_InvalidUsername extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression", "negative"})
 	public void InvalidUsername() {
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 		waitForElementTobeVisible(loginpage.return_username());

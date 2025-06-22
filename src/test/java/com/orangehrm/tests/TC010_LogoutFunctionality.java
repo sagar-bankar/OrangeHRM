@@ -9,10 +9,10 @@ import com.orangehrm.utils.ExtentReport_OrangeHRM;
 
 public class TC010_LogoutFunctionality extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","sanity"})
 	public void LogoutFunctionality() {
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername("Admin");
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");

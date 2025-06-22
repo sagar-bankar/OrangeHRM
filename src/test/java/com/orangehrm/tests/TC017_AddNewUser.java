@@ -10,11 +10,11 @@ import com.orangehrm.pages.LoginPage;
 
 public class TC017_AddNewUser extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","admin","smoke"})
 	public void AddNewUser() throws InterruptedException {
 
 		// Login to admin page
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername("Admin");
 		waitForElementTobeVisible(loginpage.return_password());
@@ -23,7 +23,7 @@ public class TC017_AddNewUser extends BaseClass {
 		loginpage.clickOnSubmitbtn();
 
 		// DashboardPage
-		DashBoardPage dashboardpage = new DashBoardPage(driver);
+		DashBoardPage dashboardpage = new DashBoardPage(getDriver());
 
 		waitForElementTobeVisible(dashboardpage.return_admin());
 		dashboardpage.clickOn_admin();
@@ -32,7 +32,7 @@ public class TC017_AddNewUser extends BaseClass {
 		//Thread.sleep(9000);
 		
 		// AdminPage here
-		AdminPage adminpage = new AdminPage(driver);
+		AdminPage adminpage = new AdminPage(getDriver());
 		
 		waitForElementTobeVisible(adminpage.return_addbtn());
 		adminpage.clickOnaddBtn();

@@ -10,10 +10,10 @@ import com.orangehrm.utils.ExtentReport_OrangeHRM;
 
 public class TC001_ValidLogin extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression", "smoke", "sanity"}) 
 	public void ValidLogin() {
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername("Admin");
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
@@ -27,7 +27,7 @@ public class TC001_ValidLogin extends BaseClass {
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 
 		logger.info("Log in successfully done...");
-		DashBoardPage dashboardpage = new DashBoardPage(driver);
+		DashBoardPage dashboardpage = new DashBoardPage(getDriver());
 		waitForElementTobeVisible(dashboardpage.return_Dashboardelement());
 		ExtentReport_OrangeHRM.getTest().pass("Login successful. Dashboard is visible.");
 

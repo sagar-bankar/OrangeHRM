@@ -10,12 +10,12 @@ import com.orangehrm.utils.ExtentReport_OrangeHRM;
 
 public class TC016_NavigatetoUsers extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","admin", "sanity"})
 	public void NavigatetoUsers() {
 
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername("Admin");
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
@@ -28,13 +28,13 @@ public class TC016_NavigatetoUsers extends BaseClass {
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 
-		DashBoardPage dashboardpage = new DashBoardPage(driver);
+		DashBoardPage dashboardpage = new DashBoardPage(getDriver());
 		waitForElementTobeVisible(dashboardpage.return_admin());
 		ExtentReport_OrangeHRM.getTest().info("we are in dashboard page");
 		dashboardpage.clickOn_admin();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on Admin button");
 
-		AdminPage adminpage = new AdminPage(driver);
+		AdminPage adminpage = new AdminPage(getDriver());
 		ExtentReport_OrangeHRM.getTest().info("Admin page total user account is: " + adminpage.getUserRowCount());
 
 		Assert.assertTrue(adminpage.getUserRowCount() > 0);

@@ -9,12 +9,12 @@ import com.orangehrm.utils.ExtentReport_OrangeHRM;
 
 public class TC015_ProfileDropdownCheck extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","ui"})
 	public void ProfileDropdownCheck() {
 
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername("Admin");
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
@@ -27,7 +27,7 @@ public class TC015_ProfileDropdownCheck extends BaseClass {
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 
-		DashBoardPage dashboardpage = new DashBoardPage(driver);
+		DashBoardPage dashboardpage = new DashBoardPage(getDriver());
 
 		waitForElementTobeVisible(dashboardpage.return_qAEngineer_dropdownbtn());
 		ExtentReport_OrangeHRM.getTest().info("We now on Dashboard page");

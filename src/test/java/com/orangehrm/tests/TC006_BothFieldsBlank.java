@@ -8,10 +8,10 @@ import com.orangehrm.utils.ExtentReport_OrangeHRM;
 
 public class TC006_BothFieldsBlank extends BaseClass {
 
-	@Test
+	@Test(groups= {"regression","negative"})
 	public void BothFieldsBlank() {
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
-		LoginPage loginpage = new LoginPage(driver);
+		LoginPage loginpage = new LoginPage(getDriver());
 
 		waitForElementTobeVisible(loginpage.return_username());
 		ExtentReport_OrangeHRM.getTest().info("we keep username blank");

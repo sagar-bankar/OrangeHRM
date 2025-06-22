@@ -20,17 +20,41 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
-import com.orangehrm.utils.ExtentReport_OrangeHRM;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
-	public static WebDriver driver;
-	public WebDriverWait wait;
+	private static ThreadLocal<WebDriver> ldriver = new ThreadLocal<>();
+	private static ThreadLocal<WebDriverWait> lwait = new ThreadLocal<>();
+
+	// public static WebDriver driver;
+	WebDriver driver = null; // ✅ Local variable, NOT the global one
+	// public WebDriverWait wait;
+	WebDriverWait wait = null;
 	public Logger logger;
 
+	public void setDriver(WebDriver driver) {
+		ldriver.set(driver);
+	}
+
+	public WebDriver getDriver() {
+		if (ldriver.get() == null) {
+			return driver;
+		}
+		return ldriver.get();
+	}
+
+	public void setWait(WebDriverWait wait) {
+		lwait.set(wait);
+	}
+
+	public WebDriverWait getWait() {
+		return lwait.get();
+	}
+
+	@Parameters({ "os", "browser" })
 	@BeforeClass
-	public void setuP() {
-		String browser = "chrome";
+	public void setuP(String os, String browser) {
+		// String browser = "chrome";
 		switch (browser.toLowerCase()) {
 		case "chrome":
 			driver = new ChromeDriver();
@@ -45,30 +69,34 @@ public class BaseClass {
 			System.out.println("Brouser is not valid");
 
 		}
-		//ExtentReport_OrangeHRM.getTest().info("Browser launched successfully.");
-		
-		
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		setDriver(driver);
+		// ExtentReport_OrangeHRM.getTest().info("Browser launched successfully.");
+
+		// wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+		setWait(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
 		logger = LogManager.getLogger(this.getClass());
 
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
 	}
 
 	public void waitForElementTobeVisible(WebElement webelement) {
-		wait.until(ExpectedConditions.visibilityOf(webelement));
+		// wait.until(ExpectedConditions.visibilityOf(webelement));
+		getWait().until(ExpectedConditions.visibilityOf(webelement));
+
 	}
-	
+
 	public void waitForVisibilityOfAllElements(List<WebElement> webelement) {
-		wait.until(ExpectedConditions.visibilityOfAllElements(webelement));
+		// .until(ExpectedConditions.visibilityOfAllElements(webelement));
+		getWait().until(ExpectedConditions.visibilityOfAllElements(webelement));
 	}
 
 	public String captureScreen(String tname) throws IOException {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
-		TakesScreenshot ts = (TakesScreenshot) driver;
+		TakesScreenshot ts = (TakesScreenshot) getDriver();
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		String path = "C:\\Workspaces\\30-10-2024 On words\\OrangeHRM\\Screenshots\\" + tname + "" + timeStamp + ".png";
 		File des = new File(path);
@@ -80,8 +108,10 @@ public class BaseClass {
 
 	@AfterClass
 	public void tearDown() {
-		driver.quit();
-		//ExtentReport_OrangeHRM.getTest().info("Browser closed.");
+		getDriver().quit();
+		ldriver.remove();
+		lwait.remove();
+		// ExtentReport_OrangeHRM.getTest().info("Browser closed.");
 	}
 
 }
