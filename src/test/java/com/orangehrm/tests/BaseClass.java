@@ -29,7 +29,7 @@ public class BaseClass {
 	// public static WebDriver driver;
 	WebDriver driver = null; // ✅ Local variable, NOT the global one
 	// public WebDriverWait wait;
-	WebDriverWait wait = null;
+	WebDriverWait wait =null;
 	public Logger logger;
 
 	public void setDriver(WebDriver driver) {
@@ -54,6 +54,7 @@ public class BaseClass {
 	@Parameters({ "os", "browser" })
 	@BeforeClass
 	public void setuP(String os, String browser) {
+		
 		// String browser = "chrome";
 		switch (browser.toLowerCase()) {
 		case "chrome":

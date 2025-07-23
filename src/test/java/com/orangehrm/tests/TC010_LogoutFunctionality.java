@@ -25,7 +25,7 @@ public class TC010_LogoutFunctionality extends BaseClass {
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 
-		DashBoardPage dashboardpage = new DashBoardPage(driver);
+		DashBoardPage dashboardpage = new DashBoardPage(getDriver());
 
 		waitForElementTobeVisible(dashboardpage.return_qAEngineer_dropdownbtn());
 		dashboardpage.clickOn_qAEngineer_dropdownbtn();

@@ -38,7 +38,7 @@ public class TC017_AddNewUser extends BaseClass {
 		adminpage.clickOnaddBtn();
 		
 		// AddUserPage
-		AddUserPage addUserpage = new AddUserPage(driver);
+		AddUserPage addUserpage = new AddUserPage(getDriver());
 		Thread.sleep(9000);
 		
 		//waitForElementTobeVisible(addUserpage.returnUserRoleAdmin());

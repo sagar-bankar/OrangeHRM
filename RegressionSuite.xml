@@ -6,7 +6,7 @@
 			class-name="com.orangehrm.utils.ExtentReport_OrangeHRM" />
 	</listeners>
 
-	<test thread-count="5" name="OrangeHRM-chrome">
+	<test thread-count="2" name="OrangeHRM-chrome">
 		<parameter name="os" value="windows"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<groups>
