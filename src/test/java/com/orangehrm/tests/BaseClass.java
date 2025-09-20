@@ -1,11 +1,14 @@
 package com.orangehrm.tests;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,6 +34,7 @@ public class BaseClass {
 	// public WebDriverWait wait;
 	WebDriverWait wait =null;
 	public Logger logger;
+	public static Properties p;
 
 	public void setDriver(WebDriver driver) {
 		ldriver.set(driver);
@@ -53,7 +57,7 @@ public class BaseClass {
 
 	@Parameters({ "os", "browser" })
 	@BeforeClass
-	public void setuP(String os, String browser) {
+	public void setuP(String os, String browser) throws IOException {
 		
 		// String browser = "chrome";
 		switch (browser.toLowerCase()) {
@@ -76,10 +80,15 @@ public class BaseClass {
 		// wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
 		setWait(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
 		logger = LogManager.getLogger(this.getClass());
+		//properties file read
+		String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
+		FileReader file = new FileReader(filePath);
+		 p = new Properties();
+		p.load(file);
 
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		getDriver().get(p.getProperty("OrangeHRM_URL"));
 
 	}
 
