@@ -14,11 +14,11 @@ public class TC002_InvalidUsername extends BaseClass {
 
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 		waitForElementTobeVisible(loginpage.return_username());
-		loginpage.sendUsername("wronguser");
+		loginpage.sendUsername(p.getProperty("invalidLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered Invalid username");
 
 		waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword("admin123");
+		loginpage.sendPassword(p.getProperty("validLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
 		waitForElementTobeVisible(loginpage.return_submitbtn());

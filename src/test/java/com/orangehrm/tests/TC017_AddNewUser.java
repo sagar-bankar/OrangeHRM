@@ -16,9 +16,9 @@ public class TC017_AddNewUser extends BaseClass {
 		// Login to admin page
 		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
-		loginpage.sendUsername("Admin");
+		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword("admin123");
+		loginpage.sendPassword(p.getProperty("validLoginPassword"));
 		waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 

@@ -14,7 +14,7 @@ public class TC005_BlankPassword extends BaseClass {
 		LoginPage loginpage = new LoginPage(getDriver());
 
 		waitForElementTobeVisible(loginpage.return_username());
-		loginpage.sendUsername("Admin");
+		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
 		waitForElementTobeVisible(loginpage.return_password());

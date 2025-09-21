@@ -15,11 +15,11 @@ public class TC003_InvalidPassword extends BaseClass {
 		LoginPage loginpage = new LoginPage(getDriver());
 
 		waitForElementTobeVisible(loginpage.return_username());
-		loginpage.sendUsername("Admin");
+		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
 		waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword("wrongpass");
+		loginpage.sendPassword(p.getProperty("invalidLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered Invalid password");
 
 		waitForElementTobeVisible(loginpage.return_submitbtn());
@@ -33,7 +33,6 @@ public class TC003_InvalidPassword extends BaseClass {
 		ExtentReport_OrangeHRM.getTest().info("Password field showing Expected error message: " + ExpectedErrormsg);
 
 		Assert.assertEquals(ActualErrormsg, ExpectedErrormsg);
-
 	}
 
 }

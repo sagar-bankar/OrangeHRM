@@ -22,6 +22,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -116,7 +117,8 @@ public class BaseClass {
 		return path;
 	}
 
-	@AfterClass
+	//@AfterClass
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		getDriver().quit();
 		ldriver.remove();

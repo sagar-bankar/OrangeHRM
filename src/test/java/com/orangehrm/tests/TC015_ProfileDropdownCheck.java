@@ -16,11 +16,11 @@ public class TC015_ProfileDropdownCheck extends BaseClass {
 
 		LoginPage loginpage = new LoginPage(getDriver());
 		waitForElementTobeVisible(loginpage.return_username());
-		loginpage.sendUsername("Admin");
+		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
 		waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword("admin123");
+		loginpage.sendPassword(p.getProperty("validLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
 		waitForElementTobeVisible(loginpage.return_submitbtn());
