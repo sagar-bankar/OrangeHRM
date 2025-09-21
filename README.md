@@ -26,7 +26,9 @@ OrangeHRM/
 │── pom.xml                        # Maven dependencies
 │── RegressionSuite.xml            # TestNG suite for regression
 │── ParallelSuite.xml              # TestNG suite for parallel execution
+
 🔹 Tech Stack
+
 Language: Java
 
 Automation Tool: Selenium WebDriver
@@ -40,18 +42,19 @@ Reporting: ExtentReports
 Logging: Log4j
 
 🔹 How to Run
+
 Clone the repository
 
-bash
-Copy code
 git clone https://github.com/sagar-bankar/OrangeHRM.git
+
+
 Open the project in IntelliJ IDEA / Eclipse.
 
 Run the following Maven command to clean and execute tests:
 
-bash
-Copy code
 mvn clean test
+
+
 After execution:
 
 Reports will be available under the Reports/ folder
@@ -61,6 +64,7 @@ Logs will be stored in the logs/ folder
 Screenshots for failures will be inside Screenshots/
 
 🔹 Reports & Logs
+
 📊 ExtentReports → Rich HTML reports with detailed steps & screenshots
 
 📝 Execution Logs → Captured using Log4j under the logs/ directory
@@ -68,6 +72,7 @@ Screenshots for failures will be inside Screenshots/
 📷 Failure Screenshots → Auto-captured for failed test cases
 
 🔹 Author
+
 👨‍💻 Sagar Bankar
 🔗 GitHub Profile
 
