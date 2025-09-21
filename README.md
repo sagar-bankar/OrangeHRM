@@ -26,7 +26,7 @@ OrangeHRM/
 │── pom.xml                        # Maven dependencies
 │── RegressionSuite.xml            # TestNG suite for regression
 │── ParallelSuite.xml              # TestNG suite for parallel execution
-
+---
 🔹 Tech Stack
 
 Language: Java
