@@ -28,7 +28,7 @@ OrangeHRM/
 │── ParallelSuite.xml              # TestNG suite for parallel execution
 ---
 🔹 Tech Stack
-
+```bash
 Language: Java
 
 Automation Tool: Selenium WebDriver
@@ -42,7 +42,7 @@ Reporting: ExtentReports
 Logging: Log4j
 
 🔹 How to Run
-
+```bash
 Clone the repository
 
 git clone https://github.com/sagar-bankar/OrangeHRM.git
@@ -64,7 +64,7 @@ Logs will be stored in the logs/ folder
 Screenshots for failures will be inside Screenshots/
 
 🔹 Reports & Logs
-
+```bash
 📊 ExtentReports → Rich HTML reports with detailed steps & screenshots
 
 📝 Execution Logs → Captured using Log4j under the logs/ directory
