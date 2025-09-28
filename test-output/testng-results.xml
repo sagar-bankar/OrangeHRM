@@ -2,46 +2,46 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-23T18:49:22 IST" name="OrangeHRM Suite" finished-at="2025-07-23T18:54:15 IST" duration-ms="293220">
+  <suite started-at="2025-09-28T13:46:35 IST" name="OrangeHRM Suite" finished-at="2025-09-28T13:48:52 IST" duration-ms="136924">
     <groups>
       <group name="negative">
-        <method signature="TC002_InvalidUsername.InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5bd82fed]" name="InvalidUsername" class="com.orangehrm.tests.TC002_InvalidUsername"/>
-        <method signature="TC003_InvalidPassword.InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@c1bd0be]" name="InvalidPassword" class="com.orangehrm.tests.TC003_InvalidPassword"/>
-        <method signature="TC004_BlankUsername.BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@476b0ae6]" name="BlankUsername" class="com.orangehrm.tests.TC004_BlankUsername"/>
-        <method signature="TC005_BlankPassword.BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@1c6804cd]" name="BlankPassword" class="com.orangehrm.tests.TC005_BlankPassword"/>
-        <method signature="TC006_BothFieldsBlank.BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@655f7ea]" name="BothFieldsBlank" class="com.orangehrm.tests.TC006_BothFieldsBlank"/>
+        <method signature="TC002_InvalidUsername.InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@2ccca26f]" name="InvalidUsername" class="com.orangehrm.tests.TC002_InvalidUsername"/>
+        <method signature="TC003_InvalidPassword.InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@66b7550d]" name="InvalidPassword" class="com.orangehrm.tests.TC003_InvalidPassword"/>
+        <method signature="TC004_BlankUsername.BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@3543df7d]" name="BlankUsername" class="com.orangehrm.tests.TC004_BlankUsername"/>
+        <method signature="TC005_BlankPassword.BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@7c541c15]" name="BlankPassword" class="com.orangehrm.tests.TC005_BlankPassword"/>
+        <method signature="TC006_BothFieldsBlank.BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@3542162a]" name="BothFieldsBlank" class="com.orangehrm.tests.TC006_BothFieldsBlank"/>
       </group> <!-- negative -->
       <group name="ui">
-        <method signature="TC011_DashboardLoad.DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4b3a45f1]" name="DashboardLoad" class="com.orangehrm.tests.TC011_DashboardLoad"/>
-        <method signature="TC015_ProfileDropdownCheck.ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@17a87e37]" name="ProfileDropdownCheck" class="com.orangehrm.tests.TC015_ProfileDropdownCheck"/>
+        <method signature="TC011_DashboardLoad.DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4212a0c8]" name="DashboardLoad" class="com.orangehrm.tests.TC011_DashboardLoad"/>
+        <method signature="TC015_ProfileDropdownCheck.ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@1e7aa82b]" name="ProfileDropdownCheck" class="com.orangehrm.tests.TC015_ProfileDropdownCheck"/>
       </group> <!-- ui -->
       <group name="regression">
-        <method signature="TC001_ValidLogin.ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@4212a0c8]" name="ValidLogin" class="com.orangehrm.tests.TC001_ValidLogin"/>
-        <method signature="TC002_InvalidUsername.InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5bd82fed]" name="InvalidUsername" class="com.orangehrm.tests.TC002_InvalidUsername"/>
-        <method signature="TC003_InvalidPassword.InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@c1bd0be]" name="InvalidPassword" class="com.orangehrm.tests.TC003_InvalidPassword"/>
-        <method signature="TC004_BlankUsername.BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@476b0ae6]" name="BlankUsername" class="com.orangehrm.tests.TC004_BlankUsername"/>
-        <method signature="TC005_BlankPassword.BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@1c6804cd]" name="BlankPassword" class="com.orangehrm.tests.TC005_BlankPassword"/>
-        <method signature="TC006_BothFieldsBlank.BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@655f7ea]" name="BothFieldsBlank" class="com.orangehrm.tests.TC006_BothFieldsBlank"/>
-        <method signature="TC010_LogoutFunctionality.LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@549949be]" name="LogoutFunctionality" class="com.orangehrm.tests.TC010_LogoutFunctionality"/>
-        <method signature="TC011_DashboardLoad.DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4b3a45f1]" name="DashboardLoad" class="com.orangehrm.tests.TC011_DashboardLoad"/>
-        <method signature="TC015_ProfileDropdownCheck.ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@17a87e37]" name="ProfileDropdownCheck" class="com.orangehrm.tests.TC015_ProfileDropdownCheck"/>
-        <method signature="TC016_NavigatetoUsers.NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3eeb318f]" name="NavigatetoUsers" class="com.orangehrm.tests.TC016_NavigatetoUsers"/>
+        <method signature="TC001_ValidLogin.ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" name="ValidLogin" class="com.orangehrm.tests.TC001_ValidLogin"/>
+        <method signature="TC002_InvalidUsername.InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@2ccca26f]" name="InvalidUsername" class="com.orangehrm.tests.TC002_InvalidUsername"/>
+        <method signature="TC003_InvalidPassword.InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@66b7550d]" name="InvalidPassword" class="com.orangehrm.tests.TC003_InvalidPassword"/>
+        <method signature="TC004_BlankUsername.BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@3543df7d]" name="BlankUsername" class="com.orangehrm.tests.TC004_BlankUsername"/>
+        <method signature="TC005_BlankPassword.BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@7c541c15]" name="BlankPassword" class="com.orangehrm.tests.TC005_BlankPassword"/>
+        <method signature="TC006_BothFieldsBlank.BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@3542162a]" name="BothFieldsBlank" class="com.orangehrm.tests.TC006_BothFieldsBlank"/>
+        <method signature="TC010_LogoutFunctionality.LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@698122b2]" name="LogoutFunctionality" class="com.orangehrm.tests.TC010_LogoutFunctionality"/>
+        <method signature="TC011_DashboardLoad.DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4212a0c8]" name="DashboardLoad" class="com.orangehrm.tests.TC011_DashboardLoad"/>
+        <method signature="TC015_ProfileDropdownCheck.ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@1e7aa82b]" name="ProfileDropdownCheck" class="com.orangehrm.tests.TC015_ProfileDropdownCheck"/>
+        <method signature="TC016_NavigatetoUsers.NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3b2c0e88]" name="NavigatetoUsers" class="com.orangehrm.tests.TC016_NavigatetoUsers"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="TC001_ValidLogin.ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@4212a0c8]" name="ValidLogin" class="com.orangehrm.tests.TC001_ValidLogin"/>
+        <method signature="TC001_ValidLogin.ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" name="ValidLogin" class="com.orangehrm.tests.TC001_ValidLogin"/>
       </group> <!-- smoke -->
       <group name="admin">
-        <method signature="TC016_NavigatetoUsers.NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3eeb318f]" name="NavigatetoUsers" class="com.orangehrm.tests.TC016_NavigatetoUsers"/>
+        <method signature="TC016_NavigatetoUsers.NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3b2c0e88]" name="NavigatetoUsers" class="com.orangehrm.tests.TC016_NavigatetoUsers"/>
       </group> <!-- admin -->
       <group name="sanity">
-        <method signature="TC001_ValidLogin.ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@4212a0c8]" name="ValidLogin" class="com.orangehrm.tests.TC001_ValidLogin"/>
-        <method signature="TC010_LogoutFunctionality.LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@549949be]" name="LogoutFunctionality" class="com.orangehrm.tests.TC010_LogoutFunctionality"/>
-        <method signature="TC016_NavigatetoUsers.NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3eeb318f]" name="NavigatetoUsers" class="com.orangehrm.tests.TC016_NavigatetoUsers"/>
+        <method signature="TC001_ValidLogin.ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" name="ValidLogin" class="com.orangehrm.tests.TC001_ValidLogin"/>
+        <method signature="TC010_LogoutFunctionality.LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@698122b2]" name="LogoutFunctionality" class="com.orangehrm.tests.TC010_LogoutFunctionality"/>
+        <method signature="TC016_NavigatetoUsers.NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3b2c0e88]" name="NavigatetoUsers" class="com.orangehrm.tests.TC016_NavigatetoUsers"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-07-23T18:49:22 IST" name="OrangeHRM Tests" finished-at="2025-07-23T18:54:15 IST" duration-ms="293220">
+    <test started-at="2025-09-28T13:46:35 IST" name="OrangeHRM Tests" finished-at="2025-09-28T13:48:52 IST" duration-ms="136924">
       <class name="com.orangehrm.tests.TC015_ProfileDropdownCheck">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@17a87e37]" started-at="2025-07-23T18:53:38 IST" name="setuP" finished-at="2025-07-23T18:53:47 IST" duration-ms="8761" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@1e7aa82b]" started-at="2025-09-28T13:48:24 IST" name="setuP" finished-at="2025-09-28T13:48:32 IST" duration-ms="7628" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,17 +57,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@17a87e37]" started-at="2025-07-23T18:53:47 IST" name="ProfileDropdownCheck" finished-at="2025-07-23T18:53:54 IST" duration-ms="7225" status="PASS">
+        <test-method signature="ProfileDropdownCheck()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@1e7aa82b]" started-at="2025-09-28T13:48:32 IST" name="ProfileDropdownCheck" finished-at="2025-09-28T13:48:37 IST" duration-ms="5525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProfileDropdownCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@17a87e37]" started-at="2025-07-23T18:53:54 IST" name="tearDown" finished-at="2025-07-23T18:53:56 IST" duration-ms="1233" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC015_ProfileDropdownCheck@1e7aa82b]" started-at="2025-09-28T13:48:37 IST" name="tearDown" finished-at="2025-09-28T13:48:38 IST" duration-ms="771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC015_ProfileDropdownCheck -->
       <class name="com.orangehrm.tests.TC006_BothFieldsBlank">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@655f7ea]" started-at="2025-07-23T18:52:42 IST" name="setuP" finished-at="2025-07-23T18:52:51 IST" duration-ms="8754" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@3542162a]" started-at="2025-09-28T13:47:43 IST" name="setuP" finished-at="2025-09-28T13:47:50 IST" duration-ms="7233" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,17 +83,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@655f7ea]" started-at="2025-07-23T18:52:51 IST" name="BothFieldsBlank" finished-at="2025-07-23T18:52:54 IST" duration-ms="3774" status="PASS">
+        <test-method signature="BothFieldsBlank()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@3542162a]" started-at="2025-09-28T13:47:50 IST" name="BothFieldsBlank" finished-at="2025-09-28T13:47:52 IST" duration-ms="1488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BothFieldsBlank -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@655f7ea]" started-at="2025-07-23T18:52:54 IST" name="tearDown" finished-at="2025-07-23T18:52:56 IST" duration-ms="1937" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC006_BothFieldsBlank@3542162a]" started-at="2025-09-28T13:47:52 IST" name="tearDown" finished-at="2025-09-28T13:47:53 IST" duration-ms="916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC006_BothFieldsBlank -->
       <class name="com.orangehrm.tests.TC001_ValidLogin">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@4212a0c8]" started-at="2025-07-23T18:49:23 IST" name="setuP" finished-at="2025-07-23T18:50:54 IST" duration-ms="91628" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" started-at="2025-09-28T13:46:35 IST" name="loadConfig" finished-at="2025-09-28T13:46:35 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" started-at="2025-09-28T13:46:36 IST" name="setuP" finished-at="2025-09-28T13:46:46 IST" duration-ms="9916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -109,17 +113,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@4212a0c8]" started-at="2025-07-23T18:50:55 IST" name="ValidLogin" finished-at="2025-07-23T18:51:13 IST" duration-ms="18053" status="PASS">
+        <test-method signature="ValidLogin()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" started-at="2025-09-28T13:46:46 IST" name="ValidLogin" finished-at="2025-09-28T13:46:51 IST" duration-ms="4706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@4212a0c8]" started-at="2025-07-23T18:51:13 IST" name="tearDown" finished-at="2025-07-23T18:51:19 IST" duration-ms="6188" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC001_ValidLogin@2a2c13a8]" started-at="2025-09-28T13:46:51 IST" name="tearDown" finished-at="2025-09-28T13:46:52 IST" duration-ms="1125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC001_ValidLogin -->
       <class name="com.orangehrm.tests.TC016_NavigatetoUsers">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3eeb318f]" started-at="2025-07-23T18:53:56 IST" name="setuP" finished-at="2025-07-23T18:54:05 IST" duration-ms="9705" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3b2c0e88]" started-at="2025-09-28T13:48:38 IST" name="setuP" finished-at="2025-09-28T13:48:45 IST" duration-ms="7280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,17 +139,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3eeb318f]" started-at="2025-07-23T18:54:05 IST" name="NavigatetoUsers" finished-at="2025-07-23T18:54:14 IST" duration-ms="8763" status="PASS">
+        <test-method signature="NavigatetoUsers()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3b2c0e88]" started-at="2025-09-28T13:48:45 IST" name="NavigatetoUsers" finished-at="2025-09-28T13:48:52 IST" duration-ms="6410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigatetoUsers -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3eeb318f]" started-at="2025-07-23T18:54:14 IST" name="tearDown" finished-at="2025-07-23T18:54:15 IST" duration-ms="1249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC016_NavigatetoUsers@3b2c0e88]" started-at="2025-09-28T13:48:52 IST" name="tearDown" finished-at="2025-09-28T13:48:52 IST" duration-ms="810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC016_NavigatetoUsers -->
       <class name="com.orangehrm.tests.TC003_InvalidPassword">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@c1bd0be]" started-at="2025-07-23T18:51:52 IST" name="setuP" finished-at="2025-07-23T18:52:05 IST" duration-ms="13266" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@66b7550d]" started-at="2025-09-28T13:47:11 IST" name="setuP" finished-at="2025-09-28T13:47:18 IST" duration-ms="7835" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,17 +165,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@c1bd0be]" started-at="2025-07-23T18:52:05 IST" name="InvalidPassword" finished-at="2025-07-23T18:52:11 IST" duration-ms="6013" status="PASS">
+        <test-method signature="InvalidPassword()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@66b7550d]" started-at="2025-09-28T13:47:18 IST" name="InvalidPassword" finished-at="2025-09-28T13:47:22 IST" duration-ms="3943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@c1bd0be]" started-at="2025-07-23T18:52:11 IST" name="tearDown" finished-at="2025-07-23T18:52:13 IST" duration-ms="1903" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC003_InvalidPassword@66b7550d]" started-at="2025-09-28T13:47:22 IST" name="tearDown" finished-at="2025-09-28T13:47:23 IST" duration-ms="796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC003_InvalidPassword -->
       <class name="com.orangehrm.tests.TC011_DashboardLoad">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4b3a45f1]" started-at="2025-07-23T18:53:19 IST" name="setuP" finished-at="2025-07-23T18:53:29 IST" duration-ms="10124" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4212a0c8]" started-at="2025-09-28T13:48:09 IST" name="setuP" finished-at="2025-09-28T13:48:17 IST" duration-ms="8038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -187,17 +191,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4b3a45f1]" started-at="2025-07-23T18:53:29 IST" name="DashboardLoad" finished-at="2025-07-23T18:53:37 IST" duration-ms="7819" status="PASS">
+        <test-method signature="DashboardLoad()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4212a0c8]" started-at="2025-09-28T13:48:17 IST" name="DashboardLoad" finished-at="2025-09-28T13:48:23 IST" duration-ms="6143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashboardLoad -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4b3a45f1]" started-at="2025-07-23T18:53:37 IST" name="tearDown" finished-at="2025-07-23T18:53:38 IST" duration-ms="1315" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC011_DashboardLoad@4212a0c8]" started-at="2025-09-28T13:48:23 IST" name="tearDown" finished-at="2025-09-28T13:48:24 IST" duration-ms="889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC011_DashboardLoad -->
       <class name="com.orangehrm.tests.TC010_LogoutFunctionality">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@549949be]" started-at="2025-07-23T18:52:56 IST" name="setuP" finished-at="2025-07-23T18:53:06 IST" duration-ms="9785" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@698122b2]" started-at="2025-09-28T13:47:53 IST" name="setuP" finished-at="2025-09-28T13:48:00 IST" duration-ms="6623" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,17 +217,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@549949be]" started-at="2025-07-23T18:53:06 IST" name="LogoutFunctionality" finished-at="2025-07-23T18:53:17 IST" duration-ms="10771" status="PASS">
+        <test-method signature="LogoutFunctionality()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@698122b2]" started-at="2025-09-28T13:48:00 IST" name="LogoutFunctionality" finished-at="2025-09-28T13:48:08 IST" duration-ms="7993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@549949be]" started-at="2025-07-23T18:53:17 IST" name="tearDown" finished-at="2025-07-23T18:53:19 IST" duration-ms="2154" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC010_LogoutFunctionality@698122b2]" started-at="2025-09-28T13:48:08 IST" name="tearDown" finished-at="2025-09-28T13:48:09 IST" duration-ms="1281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC010_LogoutFunctionality -->
       <class name="com.orangehrm.tests.TC005_BlankPassword">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@1c6804cd]" started-at="2025-07-23T18:52:28 IST" name="setuP" finished-at="2025-07-23T18:52:37 IST" duration-ms="9253" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@7c541c15]" started-at="2025-09-28T13:47:33 IST" name="setuP" finished-at="2025-09-28T13:47:41 IST" duration-ms="7085" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -239,17 +243,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@1c6804cd]" started-at="2025-07-23T18:52:37 IST" name="BlankPassword" finished-at="2025-07-23T18:52:40 IST" duration-ms="3340" status="PASS">
+        <test-method signature="BlankPassword()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@7c541c15]" started-at="2025-09-28T13:47:41 IST" name="BlankPassword" finished-at="2025-09-28T13:47:42 IST" duration-ms="1745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BlankPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@1c6804cd]" started-at="2025-07-23T18:52:40 IST" name="tearDown" finished-at="2025-07-23T18:52:42 IST" duration-ms="1492" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC005_BlankPassword@7c541c15]" started-at="2025-09-28T13:47:42 IST" name="tearDown" finished-at="2025-09-28T13:47:43 IST" duration-ms="945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC005_BlankPassword -->
       <class name="com.orangehrm.tests.TC002_InvalidUsername">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5bd82fed]" started-at="2025-07-23T18:51:19 IST" name="setuP" finished-at="2025-07-23T18:51:36 IST" duration-ms="16622" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@2ccca26f]" started-at="2025-09-28T13:46:52 IST" name="setuP" finished-at="2025-09-28T13:47:02 IST" duration-ms="10575" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -265,17 +269,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5bd82fed]" started-at="2025-07-23T18:51:36 IST" name="InvalidUsername" finished-at="2025-07-23T18:51:44 IST" duration-ms="7906" status="PASS">
+        <test-method signature="InvalidUsername()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@2ccca26f]" started-at="2025-09-28T13:47:02 IST" name="InvalidUsername" finished-at="2025-09-28T13:47:09 IST" duration-ms="6788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@5bd82fed]" started-at="2025-07-23T18:51:44 IST" name="tearDown" finished-at="2025-07-23T18:51:52 IST" duration-ms="8651" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC002_InvalidUsername@2ccca26f]" started-at="2025-09-28T13:47:09 IST" name="tearDown" finished-at="2025-09-28T13:47:11 IST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.orangehrm.tests.TC002_InvalidUsername -->
       <class name="com.orangehrm.tests.TC004_BlankUsername">
-        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@476b0ae6]" started-at="2025-07-23T18:52:13 IST" name="setuP" finished-at="2025-07-23T18:52:23 IST" duration-ms="10011" status="PASS">
+        <test-method is-config="true" signature="setuP(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@3543df7d]" started-at="2025-09-28T13:47:23 IST" name="setuP" finished-at="2025-09-28T13:47:31 IST" duration-ms="7419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -291,11 +295,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setuP -->
-        <test-method signature="BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@476b0ae6]" started-at="2025-07-23T18:52:23 IST" name="BlankUsername" finished-at="2025-07-23T18:52:27 IST" duration-ms="3183" status="PASS">
+        <test-method signature="BlankUsername()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@3543df7d]" started-at="2025-09-28T13:47:31 IST" name="BlankUsername" finished-at="2025-09-28T13:47:33 IST" duration-ms="1967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BlankUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@476b0ae6]" started-at="2025-07-23T18:52:27 IST" name="tearDown" finished-at="2025-07-23T18:52:28 IST" duration-ms="1126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.orangehrm.tests.TC004_BlankUsername@3543df7d]" started-at="2025-09-28T13:47:33 IST" name="tearDown" finished-at="2025-09-28T13:47:33 IST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -14,14 +14,14 @@ public class TC004_BlankUsername extends BaseClass {
 
 		LoginPage loginpage = new LoginPage(getDriver());
 
-		waitForElementTobeVisible(loginpage.return_username());
+		//waitForElementTobeVisible(loginpage.return_username());
 		ExtentReport_OrangeHRM.getTest().info("we keep username blank");
 
-		waitForElementTobeVisible(loginpage.return_password());
+		//waitForElementTobeVisible(loginpage.return_password());
 		loginpage.sendPassword(p.getProperty("validLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
-		waitForElementTobeVisible(loginpage.return_submitbtn());
+		//waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 

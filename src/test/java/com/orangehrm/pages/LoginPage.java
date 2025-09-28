@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import com.orangehrm.tests.BaseClass;
+
+public class LoginPage extends BaseClass {
 
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -50,32 +52,45 @@ public class LoginPage {
 
 	// Actions on method
 	public void sendUsername(String user) {
+		scrollIntoView(username);
+		waitForElementTobeVisible(username);
 		username.sendKeys(user);
 
 	}
 
 	public void sendPassword(String pass) {
+		scrollIntoView(password);
+		waitForElementTobeVisible(password);
 		password.sendKeys(pass);
 
 	}
 
 	public void clickOnSubmitbtn() {
+		scrollIntoView(submitbtn);
+		waitForElementTobeVisible(submitbtn);
 		submitbtn.click();
 	}
 	
 	public String gettext_message_Invalidcredentials() {
+		scrollIntoView(message_Invalidcredentials);
+		waitForElementTobeVisible(message_Invalidcredentials);
 		return message_Invalidcredentials.getText();
 	}
 	
 	public String getErrorTestOfRequired() {
+		scrollIntoView(Required);
+		waitForElementTobeVisible(Required);
 		return Required.getText();
 	}
 	
 	public boolean isVisible_Required() {
+		scrollIntoView(Required);
+		waitForElementTobeVisible(Required);
 		return Required.isDisplayed();
 	}
 	
 	public boolean isVisible_submitbtn() {
+		scrollIntoView(submitbtn);
 		return submitbtn.isDisplayed();
 	}
 }

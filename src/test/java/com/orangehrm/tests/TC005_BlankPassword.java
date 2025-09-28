@@ -13,14 +13,14 @@ public class TC005_BlankPassword extends BaseClass {
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 		LoginPage loginpage = new LoginPage(getDriver());
 
-		waitForElementTobeVisible(loginpage.return_username());
+		//waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
-		waitForElementTobeVisible(loginpage.return_password());
+		//waitForElementTobeVisible(loginpage.return_password());
 		ExtentReport_OrangeHRM.getTest().info("we keep password blank");
 
-		waitForElementTobeVisible(loginpage.return_submitbtn());
+		//waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 

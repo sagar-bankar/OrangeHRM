@@ -7,8 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AdminPage {
+import com.orangehrm.tests.BaseClass;
 
+public class AdminPage extends BaseClass {
+	WebDriver driver;
+	// constructor
 	public AdminPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 
@@ -27,15 +30,19 @@ public class AdminPage {
 	}
 
 	public WebElement return_addbtn() {
+		
 		return add;
 	}
 
 	// Actions
 	public int getUserRowCount() {
+		
 		return Dashboardelement.size();
 	}
 
 	public void clickOnaddBtn() {
+		scrollIntoView(add);
+		waitForElementTobeVisible(add);
 		add.click();
 	}
 

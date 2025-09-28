@@ -14,15 +14,15 @@ public class TC001_ValidLogin extends BaseClass {
 	public void ValidLogin() {
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 		LoginPage loginpage = new LoginPage(getDriver());
-		waitForElementTobeVisible(loginpage.return_username());
+		//waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
-		waitForElementTobeVisible(loginpage.return_password());
+		//waitForElementTobeVisible(loginpage.return_password());
 		loginpage.sendPassword(p.getProperty("validLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
-		waitForElementTobeVisible(loginpage.return_submitbtn());
+		//waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 

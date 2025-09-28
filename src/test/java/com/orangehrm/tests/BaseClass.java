@@ -3,7 +3,6 @@ package com.orangehrm.tests;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -21,109 +20,109 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
-	private static ThreadLocal<WebDriver> ldriver = new ThreadLocal<>();
-	private static ThreadLocal<WebDriverWait> lwait = new ThreadLocal<>();
 
-	// public static WebDriver driver;
-	WebDriver driver = null; // ✅ Local variable, NOT the global one
-	// public WebDriverWait wait;
-	WebDriverWait wait =null;
-	public Logger logger;
-	public static Properties p;
+    private static ThreadLocal<WebDriver> ldriver = new ThreadLocal<>();
+    private static ThreadLocal<WebDriverWait> lwait = new ThreadLocal<>();
 
-	public void setDriver(WebDriver driver) {
-		ldriver.set(driver);
-	}
+    public Logger logger;
+    public static Properties p;
 
-	public WebDriver getDriver() {
-		if (ldriver.get() == null) {
-			return driver;
-		}
-		return ldriver.get();
-	}
+    // ----------------- Driver / Wait Getters -----------------
+    public void setDriver(WebDriver driver) {
+        ldriver.set(driver);
+    }
 
-	public void setWait(WebDriverWait wait) {
-		lwait.set(wait);
-	}
+    public WebDriver getDriver() {
+        return ldriver.get();
+    }
 
-	public WebDriverWait getWait() {
-		return lwait.get();
-	}
+    public void setWait(WebDriverWait wait) {
+        lwait.set(wait);
+    }
 
-	@Parameters({ "os", "browser" })
-	@BeforeClass
-	public void setuP(String os, String browser) throws IOException {
-		
-		// String browser = "chrome";
-		switch (browser.toLowerCase()) {
-		case "chrome":
-			driver = new ChromeDriver();
-			break;
-		case "edge":
-			driver = new EdgeDriver();
-			break;
-		case "firefox":
-			driver = new FirefoxDriver();
-			break;
-		default:
-			System.out.println("Brouser is not valid");
+    public WebDriverWait getWait() {
+        return lwait.get();
+    }
 
-		}
-		setDriver(driver);
-		// ExtentReport_OrangeHRM.getTest().info("Browser launched successfully.");
+    // ----------------- Config Load -----------------
+    @BeforeSuite(alwaysRun = true)
+    public void loadConfig() throws IOException {
+        String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
+        FileReader file = new FileReader(filePath);
+        p = new Properties();
+        p.load(file);
+        file.close();
+    }
 
-		// wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
-		setWait(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
-		logger = LogManager.getLogger(this.getClass());
-		//properties file read
-		String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
-		FileReader file = new FileReader(filePath);
-		 p = new Properties();
-		p.load(file);
+    // ----------------- Browser Setup -----------------
+    @Parameters({ "os", "browser" })
+    @BeforeClass(alwaysRun = true)
+    public void setuP(String os, String browser) {
+        WebDriver driver = null;
 
-		getDriver().manage().window().maximize();
-		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		getDriver().get(p.getProperty("OrangeHRM_URL"));
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
+            default:
+                throw new RuntimeException("Browser not valid: " + browser);
+        }
 
-	}
+        setDriver(driver);
+        setWait(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
 
-	public void waitForElementTobeVisible(WebElement webelement) {
-		// wait.until(ExpectedConditions.visibilityOf(webelement));
-		getWait().until(ExpectedConditions.visibilityOf(webelement));
+        logger = LogManager.getLogger(this.getClass());
 
-	}
+        getDriver().manage().window().maximize();
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        getDriver().get(p.getProperty("OrangeHRM_URL"));
+    }
 
-	public void waitForVisibilityOfAllElements(List<WebElement> webelement) {
-		// .until(ExpectedConditions.visibilityOfAllElements(webelement));
-		getWait().until(ExpectedConditions.visibilityOfAllElements(webelement));
-	}
+    // ----------------- Utilities -----------------
+    public void waitForElementTobeVisible(WebElement element) {
+        getWait().until(ExpectedConditions.visibilityOf(element));
+    }
 
-	public String captureScreen(String tname) throws IOException {
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+    public void waitForVisibilityOfAllElements(List<WebElement> elements) {
+        getWait().until(ExpectedConditions.visibilityOfAllElements(elements));
+    }
 
-		TakesScreenshot ts = (TakesScreenshot) getDriver();
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		String path = "C:\\Workspaces\\30-10-2024 On words\\OrangeHRM\\Screenshots\\" + tname + "" + timeStamp + ".png";
-		File des = new File(path);
+    public void scrollIntoView(WebElement element) {
+        ((org.openqa.selenium.JavascriptExecutor) getDriver())
+                .executeScript("arguments[0].scrollIntoView(true);", element);
+    }
 
-		// FileHandler.copy(src, des);
-		src.renameTo(des);
-		return path;
-	}
+    public String captureScreen(String tname) throws IOException {
+        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+        TakesScreenshot ts = (TakesScreenshot) getDriver();
+        File src = ts.getScreenshotAs(OutputType.FILE);
 
-	//@AfterClass
-	@AfterMethod(alwaysRun = true)
-	public void tearDown() {
-		getDriver().quit();
-		ldriver.remove();
-		lwait.remove();
-		// ExtentReport_OrangeHRM.getTest().info("Browser closed.");
-	}
+        String path = System.getProperty("user.dir") + "\\Screenshots\\" + tname + "_" + timeStamp + ".png";
+        File des = new File(path);
+        src.renameTo(des);
 
+        return path;
+    }
+
+    // ----------------- Tear Down -----------------
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        if (getDriver() != null) {
+            getDriver().quit();
+        }
+        ldriver.remove();
+        lwait.remove();
+    }
 }

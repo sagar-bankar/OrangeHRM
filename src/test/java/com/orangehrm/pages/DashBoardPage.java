@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DashBoardPage {
+import com.orangehrm.tests.BaseClass;
+
+public class DashBoardPage extends BaseClass {
 
 	public DashBoardPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -59,31 +61,45 @@ public class DashBoardPage {
 
 	// Actions on method
 	public boolean isDisplayed_Dashboardelement() {
+		scrollIntoView(Dashboardelement);
+		waitForElementTobeVisible(Dashboardelement);
 		return Dashboardelement.isDisplayed();
 
 	}
 	
 	public void clickOn_qAEngineer_dropdownbtn() {
+		scrollIntoView(qAEngineer_dropdownbtn);
+		waitForElementTobeVisible(qAEngineer_dropdownbtn);
 		qAEngineer_dropdownbtn.click();
 	}
 	
 	public void clickOn_logout() {
+		scrollIntoView(logout);
+		waitForElementTobeVisible(logout);
 		logout.click();
 	}
 	
 	public boolean isVisible_assignLeave() {
+		scrollIntoView(assignLeave);
+		waitForElementTobeVisible(assignLeave);
 		return assignLeave.isDisplayed();
 	}
 	
 	public boolean isVisible_myTimesheet() {
+		scrollIntoView(myTimesheet);
+		waitForElementTobeVisible(myTimesheet);
 		return myTimesheet.isDisplayed();
 	}
 	
 	public boolean isVisible_logout() {
+		scrollIntoView(logout);
+		waitForElementTobeVisible(logout);
 		return logout.isDisplayed();
 	}
 	
 	public void clickOn_admin() {
+		scrollIntoView(admin);
+		waitForElementTobeVisible(admin);
 		admin.click();
 	}
 

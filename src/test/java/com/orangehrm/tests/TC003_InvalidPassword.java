@@ -14,15 +14,15 @@ public class TC003_InvalidPassword extends BaseClass {
 
 		LoginPage loginpage = new LoginPage(getDriver());
 
-		waitForElementTobeVisible(loginpage.return_username());
+		//waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
-		waitForElementTobeVisible(loginpage.return_password());
+		//waitForElementTobeVisible(loginpage.return_password());
 		loginpage.sendPassword(p.getProperty("invalidLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered Invalid password");
 
-		waitForElementTobeVisible(loginpage.return_submitbtn());
+		//waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 

@@ -7,9 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
-public class AddUserPage {
+import com.orangehrm.tests.BaseClass;
+
+public class AddUserPage extends BaseClass {
 	WebDriver driver;
 
 	public AddUserPage(WebDriver driver) {
@@ -101,9 +102,13 @@ public class AddUserPage {
 
 	// Actions
 	public void clickonUserRoleAdmin() {
+		scrollIntoView(userRoleAdmin);
+		waitForElementTobeVisible(userRoleAdmin);
 		userRoleAdmin.click();
 	}
 	public void selectUserRole(String userRoleText) {
+		scrollIntoView(userRoleDropdown);
+		waitForElementTobeVisible(userRoleDropdown);
 		userRoleDropdown.click();
 //		String xpath = "//div[@role='listbox']//span[text()='" + userRoleText + "']";
 //		driver.findElement(By.xpath(xpath)).click();
@@ -111,32 +116,46 @@ public class AddUserPage {
 	}
 
 	public void selectStatus(String statusText) {
+		scrollIntoView(statusDropdown);
+		waitForElementTobeVisible(statusDropdown);
 		statusDropdown.click();
 		String xpath = "//div[@role='listbox']//span[text()='" + statusText + "']";
 		driver.findElement(By.xpath(xpath)).click();
 	}
 
 	public String getProfileName() {
+		scrollIntoView(profileName);
+		waitForElementTobeVisible(profileName);
 		return profileName.getText();
 	}
 
 	public void setEmployeeNameInput() {
+		scrollIntoView(employeeNameInput);
+		waitForElementTobeVisible(employeeNameInput);
 		employeeNameInput.sendKeys(getProfileName());
 	}
 
 	public void sendUsernameInput(String userName) {
+		scrollIntoView(usernameInput);
+		waitForElementTobeVisible(usernameInput);
 		usernameInput.sendKeys(userName);
 	}
 
 	public void sendPassword(String password) {
+		scrollIntoView(passwordInput);
+		waitForElementTobeVisible(passwordInput);
 		passwordInput.sendKeys(password);
 	}
 
 	public void sendConfirmPassword(String ConfirmPassword) {
+		scrollIntoView(confirmPasswordInput);
+		waitForElementTobeVisible(confirmPasswordInput);
 		confirmPasswordInput.sendKeys(ConfirmPassword);
 	}
 
 	public void clickOnSaveButton() {
+		scrollIntoView(saveButton);
+		waitForElementTobeVisible(saveButton);
 		saveButton.click();
 	}
 

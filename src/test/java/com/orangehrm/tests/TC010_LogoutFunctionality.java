@@ -13,15 +13,15 @@ public class TC010_LogoutFunctionality extends BaseClass {
 	public void LogoutFunctionality() {
 		ExtentReport_OrangeHRM.getTest().info("Navigating to OrangeHRM login page");
 		LoginPage loginpage = new LoginPage(getDriver());
-		waitForElementTobeVisible(loginpage.return_username());
+		//waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
-		waitForElementTobeVisible(loginpage.return_password());
+		//waitForElementTobeVisible(loginpage.return_password());
 		loginpage.sendPassword(p.getProperty("validLoginPassword"));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
-		waitForElementTobeVisible(loginpage.return_submitbtn());
+		//waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on login button");
 
@@ -35,7 +35,7 @@ public class TC010_LogoutFunctionality extends BaseClass {
 		dashboardpage.clickOn_logout();
 		ExtentReport_OrangeHRM.getTest().info("Clicked on logout button");
 
-		waitForElementTobeVisible(loginpage.return_submitbtn());
+		//waitForElementTobeVisible(loginpage.return_submitbtn());
 		ExtentReport_OrangeHRM.getTest().info(
 				"we again on login page and login button status is visible or not: " + loginpage.isVisible_submitbtn());
 
