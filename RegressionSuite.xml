@@ -10,7 +10,7 @@
 		<parameter name="os" value="windows"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 
-		<groups> <run> <include name="sanity" /> </run> </groups> 
+		<groups> <run> <include name="regression" /> </run> </groups> 
 
 		<classes>
 			<class name="com.orangehrm.tests.TC001_ValidLogin" />
