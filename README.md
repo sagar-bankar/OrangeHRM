@@ -76,3 +76,10 @@ Screenshots for failures will be inside Screenshots/
 🔗 GitHub Profile
 
 ⭐ If you find this project helpful, please give it a star on GitHub!
+
+---------------------------------------------------------------------------------------------------------------------------------
+© 2025 Sagar Bankar. All rights reserved.
+
+This project is shared for educational and portfolio purposes.
+Reproduction, commercial use, or redistribution without explicit
+permission from the author is not allowed.
