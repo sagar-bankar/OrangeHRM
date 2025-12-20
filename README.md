@@ -27,6 +27,10 @@ OrangeHRM/
 │── RegressionSuite.xml            # TestNG suite for regression
 │── ParallelSuite.xml              # TestNG suite for parallel execution
 
+```
+<img width="614" height="779" alt="image" src="https://github.com/user-attachments/assets/8bc01280-8471-4dc4-b90b-1eae7f4114b1" />
+
+```
 🔹 Tech Stack
 
 Language: Java
