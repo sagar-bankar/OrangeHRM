@@ -72,6 +72,9 @@ Screenshots for failures will be inside Screenshots/
 ```
 🔹 Author
 
+Sagar Bankar<br>
+Software Test Engineer
+
 🔗 GitHub Profile:
 https://github.com/Sagar-bankar <br>
 🔗 Visit github page for real Result -->>> [click live Page Result](https://sagar-bankar.github.io/OrangeHRM_TDD_Project_Github_Page/)
