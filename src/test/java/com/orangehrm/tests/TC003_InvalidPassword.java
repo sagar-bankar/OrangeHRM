@@ -19,7 +19,7 @@ public class TC003_InvalidPassword extends BaseClass {
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
 		//waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword(p.getProperty("invalidLoginPassword"));
+		loginpage.sendPassword(BaseClass.decrypt(p.getProperty("invalidLoginPassword")));
 		ExtentReport_OrangeHRM.getTest().info("Entered Invalid password");
 
 		//waitForElementTobeVisible(loginpage.return_submitbtn());

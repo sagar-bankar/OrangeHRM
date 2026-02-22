@@ -18,7 +18,7 @@ public class TC017_AddNewUser extends BaseClass {
 		waitForElementTobeVisible(loginpage.return_username());
 		loginpage.sendUsername(p.getProperty("validLoginUsername"));
 		waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword(p.getProperty("validLoginPassword"));
+		loginpage.sendPassword(BaseClass.decrypt(p.getProperty("validLoginPassword")));
 		waitForElementTobeVisible(loginpage.return_submitbtn());
 		loginpage.clickOnSubmitbtn();
 

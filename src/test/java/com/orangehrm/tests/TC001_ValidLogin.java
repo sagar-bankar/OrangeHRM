@@ -19,7 +19,8 @@ public class TC001_ValidLogin extends BaseClass {
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
 		//waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword(p.getProperty("validLoginPassword"));
+		//loginpage.sendPassword(p.getProperty("validLoginPassword"));
+		loginpage.sendPassword(BaseClass.decrypt(p.getProperty("validLoginPassword")));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
 		//waitForElementTobeVisible(loginpage.return_submitbtn());
@@ -30,7 +31,6 @@ public class TC001_ValidLogin extends BaseClass {
 		DashBoardPage dashboardpage = new DashBoardPage(getDriver());
 		waitForElementTobeVisible(dashboardpage.return_Dashboardelement());
 		ExtentReport_OrangeHRM.getTest().pass("Login successful. Dashboard is visible.");
-
 		Assert.assertTrue(dashboardpage.isDisplayed_Dashboardelement());
 	}
 

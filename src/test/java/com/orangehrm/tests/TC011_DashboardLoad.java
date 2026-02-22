@@ -19,7 +19,7 @@ public class TC011_DashboardLoad extends BaseClass {
 		ExtentReport_OrangeHRM.getTest().info("Entered valid username");
 
 		//waitForElementTobeVisible(loginpage.return_password());
-		loginpage.sendPassword(p.getProperty("validLoginPassword"));
+		loginpage.sendPassword(BaseClass.decrypt(p.getProperty("validLoginPassword")));
 		ExtentReport_OrangeHRM.getTest().info("Entered valid password");
 
 		//waitForElementTobeVisible(loginpage.return_submitbtn());
