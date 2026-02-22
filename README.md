@@ -27,6 +27,10 @@ OrangeHRM/
 │── RegressionSuite.xml            # TestNG suite for regression
 │── ParallelSuite.xml              # TestNG suite for parallel execution
 
+```
+<img width="614" height="779" alt="image" src="https://github.com/user-attachments/assets/8bc01280-8471-4dc4-b90b-1eae7f4114b1" />
+
+```
 🔹 Tech Stack
 
 Language: Java
@@ -69,10 +73,23 @@ Screenshots for failures will be inside Screenshots/
 📝 Execution Logs → Captured using Log4j under the logs/ directory
 
 📷 Failure Screenshots → Auto-captured for failed test cases
-
+```
 🔹 Author
 
-👨‍💻 Sagar Bankar
-🔗 GitHub Profile
+Sagar Bankar<br>
+Software Test Engineer
 
-⭐ If you find this project helpful, please give it a star on GitHub!
+🔗 GitHub Profile:
+https://github.com/Sagar-bankar <br>
+🔗 Visit github page for real Result -->>> [click live Page Result](https://sagar-bankar.github.io/OrangeHRM_TDD_Project_Github_Page/)
+
+⭐ If you find this project helpful, please consider giving it a star!
+```
+---------------------------------------------------------------------------------------------------------------------------------
+© 2025 Sagar Bankar. All rights reserved.
+
+This project is shared for educational and portfolio purposes.
+Reproduction, commercial use, or redistribution without explicit
+permission from the author is not allowed.
+---------------------------------------------------------------------------------------------------------------------------------
+```
