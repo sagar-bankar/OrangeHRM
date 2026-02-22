@@ -110,7 +110,7 @@ public class BaseClass2 {
 	public String captureScreen(String tname) throws IOException {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
-		TakesScreenshot ts = (TakesScreenshot) getDriver();
+		TakesScreenshot ts = (TakesScreenshot) getDriver(); 
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		String path = "C:\\Workspaces\\30-10-2024 On words\\OrangeHRM\\Screenshots\\" + tname + "" + timeStamp + ".png";
 		File des = new File(path);
